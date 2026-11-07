@@ -1,0 +1,300 @@
+1|lieben; gern haben|我爱我的家人。|Ich liebe meine Familie.
+2|acht|我八点起床。|Ich stehe um acht Uhr auf.
+3|Papa, Vater|我爸爸是医生。|Mein Vater ist Arzt.
+4|Partikel: Vorschlag, Vermutung („…, oder?“, „lass uns …“)|我们走吧！|Lass uns gehen!
+5|tagsüber; Tag|我白天工作，晚上学习。|Tagsüber arbeite ich, abends lerne ich.
+6|hundert|这本书一百块。|Dieses Buch kostet hundert Yuan.
+7|halb, Hälfte|现在八点半。|Es ist jetzt halb neun.
+8|gefülltes Dampfbrötchen (Baozi)|早上我吃了两个包子。|Morgens habe ich zwei Baozi gegessen.
+9|Tasse, Becher, Glas|这个杯子是我的。|Diese Tasse gehört mir.
+10|Zählwort für Bücher, Hefte|我买了三本书。|Ich habe drei Bücher gekauft.
+11|Seite, Rand; (Ortssuffix)|学校旁边有一个商店。|Neben der Schule gibt es einen Laden.
+12|Krankheit; krank sein|他的病好了。|Seine Krankheit ist ausgeheilt.
+13|nicht, nein|我不喝茶。|Ich trinke keinen Tee.
+14|Keine Ursache! Bitte sehr!|——谢谢！——不客气。|„Danke!“ – „Keine Ursache.“
+15|nicht (tun)!, lass das!|不要说话！|Nicht reden!
+16|Gericht, Essen; Gemüse|这个菜很好吃。|Dieses Gericht ist sehr lecker.
+17|Tee|你喝茶吗？|Trinkst du Tee?
+18|singen|她很喜欢唱歌。|Sie singt sehr gern.
+19|Supermarkt|我去超市买东西。|Ich gehe in den Supermarkt einkaufen.
+20|Auto, Fahrzeug|你的车在哪儿？|Wo ist dein Auto?
+21|essen|你吃饭了吗？|Hast du schon gegessen?
+22|Taxi|我们坐出租车去吧。|Lass uns mit dem Taxi fahren.
+23|anziehen, tragen (Kleidung)|今天很冷，多穿一点儿。|Heute ist es kalt, zieh dich warm an.
+24|telefonieren, anrufen|我晚上给你打电话。|Ich rufe dich heute Abend an.
+25|groß; alt (Alter)|他的房间很大。|Sein Zimmer ist sehr groß.
+26|alle, alle zusammen|大家好！|Hallo zusammen!
+27|Universität|我哥哥在北京上大学。|Mein Bruder studiert in Peking.
+28|Student(in)|她是大学生。|Sie ist Studentin.
+29|ankommen; bis; nach (Ort)|我们到学校了。|Wir sind an der Schule angekommen.
+30|Partikel: Besitz/Attribut („von“, „-s“)|这是我的书。|Das ist mein Buch.
+31|jüngerer Bruder|我弟弟今年十岁。|Mein kleiner Bruder ist dieses Jahr zehn.
+32|Präfix für Ordnungszahlen („der …te“)|这是我第一次来中国。|Das ist mein erstes Mal in China.
+33|Uhr (Uhrzeit); Punkt|现在几点？|Wie spät ist es jetzt?
+34|Telefon; Anruf|你的电话号码是多少？|Wie ist deine Telefonnummer?
+35|Computer|我用电脑学习汉语。|Ich lerne Chinesisch am Computer.
+36|Fernseher; Fernsehen|晚上我不看电视。|Abends sehe ich nicht fern.
+37|Film|这个电影很好看。|Dieser Film ist sehr gut.
+38|Kino|我们去电影院看电影吧。|Lass uns ins Kino gehen.
+39|Laden, Geschäft|这家店的东西很便宜。|Die Sachen in diesem Laden sind billig.
+40|Ding, Sache|你买什么东西？|Was kaufst du?
+41|alle; schon|我们都是学生。|Wir sind alle Schüler.
+42|(laut) lesen; studieren|请你读一下。|Lies bitte einmal vor.
+43|lesen; zur Schule gehen, studieren|我喜欢读书。|Ich lese gern.
+44|richtig; zu, gegenüber|你说得对。|Du hast recht.
+45|Entschuldigung! Tut mir leid.|对不起，我来晚了。|Entschuldigung, ich bin zu spät.
+46|viel, viele; mehr|今天人很多。|Heute sind viele Leute da.
+47|wie viel, wie viele|这个多少钱？|Wie viel kostet das?
+48|Sohn|他有一个儿子。|Er hat einen Sohn.
+49|zwei (beim Zählen, in Zahlen)|我住在二号楼。|Ich wohne in Gebäude Nr. 2.
+50|Essen, Mahlzeit; gekochter Reis|我们去吃饭吧。|Lass uns essen gehen.
+51|Restaurant; Hotel|这家饭店的菜很好吃。|Das Essen in diesem Restaurant ist sehr gut.
+52|Zimmer, Raum|我的房间不大。|Mein Zimmer ist nicht groß.
+53|Flugzeug|我坐飞机去上海。|Ich fliege nach Shanghai.
+54|sehr, äußerst|我非常高兴。|Ich freue mich sehr.
+55|Minute; Fen (1/100 Yuan); Punkt; teilen|现在三点十分。|Es ist jetzt 3:10 Uhr.
+56|Minute (Dauer)|我等了你二十分钟。|Ich habe zwanzig Minuten auf dich gewartet.
+57|froh, fröhlich|认识你很高兴。|Freut mich, dich kennenzulernen.
+58|älterer Bruder|我哥哥很高。|Mein großer Bruder ist sehr groß.
+59|Lied|这首歌很好听。|Dieses Lied klingt schön.
+60|allgemeines Zählwort|我有一个妹妹。|Ich habe eine jüngere Schwester.
+61|geben; für|妈妈给我一个苹果。|Mama gibt mir einen Apfel.
+62|arbeiten; Arbeit|你在哪儿工作？|Wo arbeitest du?
+63|Firma, Unternehmen|他在一家大公司工作。|Er arbeitet bei einer großen Firma.
+64|Hund|我家有一只狗。|Wir haben einen Hund.
+65|teuer|这件衣服太贵了。|Dieses Kleidungsstück ist zu teuer.
+66|Land, Staat|你是哪国人？|Aus welchem Land kommst du?
+67|noch; immer noch|他还在睡觉。|Er schläft noch.
+68|Kind|这个孩子很漂亮。|Dieses Kind ist sehr hübsch.
+69|Chinesisch (Sprache)|我在学习汉语。|Ich lerne Chinesisch.
+70|chinesisches Schriftzeichen|这个汉字怎么读？|Wie liest man dieses Zeichen?
+71|gut|今天天气很好。|Heute ist das Wetter gut.
+72|lecker (Essen)|妈妈做的饭很好吃。|Mamas Essen ist sehr lecker.
+73|hübsch, schön anzusehen|这件衣服很好看。|Dieses Kleidungsstück sieht schön aus.
+74|schön klingend|你唱歌很好听。|Du singst sehr schön.
+75|lustig, macht Spaß|这个游戏很好玩儿。|Dieses Spiel macht viel Spaß.
+76|Nummer; Tag (Datum)|今天几号？|Der Wievielte ist heute?
+77|trinken|你想喝什么？|Was möchtest du trinken?
+78|und; mit|我和妈妈去超市。|Ich gehe mit Mama in den Supermarkt.
+79|sehr|我很好。|Mir geht es sehr gut.
+80|hinten; nach, später|学校后面有一个公园。|Hinter der Schule ist ein Park.
+81|zurückkehren; Mal|我明天回家。|Ich fahre morgen nach Hause.
+82|können (gelernt); werden (wahrscheinlich)|你会说汉语吗？|Kannst du Chinesisch sprechen?
+83|Zug, Eisenbahn|我们坐火车去吧。|Lass uns mit dem Zug fahren.
+84|(Hühner-)Ei|我早上吃了一个鸡蛋。|Ich habe morgens ein Ei gegessen.
+85|wie viele?; einige|你家有几个人？|Wie viele Personen seid ihr in deiner Familie?
+86|Familie, Zuhause; Zählwort für Firmen/Läden|我家有四个人。|Wir sind vier Personen in meiner Familie.
+87|Familienangehörige|我的家人都在德国。|Meine Familie ist ganz in Deutschland.
+88|sehen; treffen|明天见！|Bis morgen!
+89|Zählwort für Kleidung, Angelegenheiten|我买了一件衣服。|Ich habe ein Kleidungsstück gekauft.
+90|Jiaozi (Teigtaschen)|我们一起包饺子吧。|Lass uns zusammen Jiaozi machen.
+91|heißen; rufen|你叫什么名字？|Wie heißt du?
+92|ältere Schwester|我姐姐在大学学习。|Meine große Schwester studiert.
+93|dieses Jahr|我今年十七岁。|Ich bin dieses Jahr siebzehn.
+94|heute|今天星期几？|Welcher Wochentag ist heute?
+95|neun|我九点上课。|Ich habe um neun Unterricht.
+96|finden, meinen, denken|我觉得这个很好。|Ich finde das sehr gut.
+97|öffnen; einschalten; fahren|请开门。|Bitte mach die Tür auf.
+98|Auto fahren|我爸爸开车去上班。|Mein Vater fährt mit dem Auto zur Arbeit.
+99|sehen, schauen; lesen|我在看书。|Ich lese gerade ein Buch.
+100|zum Arzt gehen; (Patienten) behandeln|我今天要去医院看病。|Ich muss heute zum Arzt ins Krankenhaus.
+101|sehen, erblicken|你看见我的手机了吗？|Hast du mein Handy gesehen?
+102|dürfen, können; nicht schlecht|我可以进来吗？|Darf ich hereinkommen?
+103|Unterricht, Lektion|今天上午有三节课。|Heute Vormittag habe ich drei Stunden Unterricht.
+104|Mund; Zählwort für Familienmitglieder|我家有三口人。|Wir sind drei Personen in meiner Familie.
+105|Kuai (Yuan, umgangssprachlich); Stück|这个苹果三块钱。|Dieser Apfel kostet drei Yuan.
+106|kommen|你什么时候来？|Wann kommst du?
+107|Lehrer(in)|王老师是我们的汉语老师。|Frau Wang ist unsere Chinesischlehrerin.
+108|Partikel: abgeschlossene Handlung / Veränderung|我吃饭了。|Ich habe gegessen.
+109|kalt|今天很冷。|Heute ist es sehr kalt.
+110|innen, drinnen|书在包里。|Das Buch ist in der Tasche.
+111|zwei (vor Zählwörtern)|我有两个哥哥。|Ich habe zwei ältere Brüder.
+112|null|我的电话号码里有两个零。|In meiner Telefonnummer sind zwei Nullen.
+113|sechs|我六点起床。|Ich stehe um sechs auf.
+114|Mama, Mutter|妈妈在做饭。|Mama kocht gerade.
+115|Fragepartikel (Ja/Nein-Frage)|你是学生吗？|Bist du Schüler?
+116|kaufen|我想买一个手机。|Ich möchte ein Handy kaufen.
+117|verkaufen|这个商店卖水果。|Dieser Laden verkauft Obst.
+118|beschäftigt; sich beschäftigen|我今天很忙。|Ich bin heute sehr beschäftigt.
+119|Katze|我喜欢猫。|Ich mag Katzen.
+120|Macht nichts! Kein Problem.|——对不起！——没关系。|„Entschuldigung!“ – „Macht nichts.“
+121|nichts los, alles in Ordnung|我没事，你别担心。|Mir geht's gut, mach dir keine Sorgen.
+122|nicht haben; es gibt nicht; nicht (Vergangenheit)|我没有钱。|Ich habe kein Geld.
+123|jüngere Schwester|我妹妹很可爱。|Meine kleine Schwester ist sehr süß.
+124|Pluralsuffix (Personen)|同学们好！|Hallo, liebe Mitschüler!
+125|(gekochter) Reis|我想吃米饭。|Ich möchte Reis essen.
+126|Brot|早上我吃面包。|Morgens esse ich Brot.
+127|Nudeln|这家店的面条儿很好吃。|Die Nudeln in diesem Laden sind sehr lecker.
+128|Name|你的名字怎么写？|Wie schreibt man deinen Namen?
+129|nächstes Jahr|我明年去中国。|Nächstes Jahr fahre ich nach China.
+130|morgen|明天见！|Bis morgen!
+131|welche(r/s)?|你是哪国人？|Aus welchem Land kommst du?
+132|welche(r/s)? (mit Zählwort)|你喜欢哪个？|Welches gefällt dir?
+133|wo?; (höflich) ach was|你住在哪里？|Wo wohnst du?
+134|wo? (umgangssprachlich)|你去哪儿？|Wohin gehst du?
+135|welche? (Plural)|你去过哪些地方？|Welche Orte hast du schon besucht?
+136|das, jene(r/s); dann|那是谁？|Wer ist das?
+137|dort drüben|那边有一个超市。|Dort drüben gibt es einen Supermarkt.
+138|das da, jene(r/s)|那个人是我的老师。|Die Person dort ist mein Lehrer.
+139|dort|那里很漂亮。|Dort ist es sehr schön.
+140|dort (umgangssprachlich)|我的书在那儿。|Mein Buch ist dort.
+141|jene (Plural)|那些东西是谁的？|Wem gehören die Sachen dort?
+142|männlich|我们班有十个男学生。|In unserer Klasse gibt es zehn Jungen.
+143|fester Freund|她有男朋友吗？|Hat sie einen Freund?
+144|Fragepartikel (… und du?; gerade)|我很好，你呢？|Mir geht es gut, und dir?
+145|können (fähig sein, dürfen)|你明天能来吗？|Kannst du morgen kommen?
+146|du|你好！|Hallo!
+147|Hallo! Guten Tag!|你好，我叫小明。|Hallo, ich heiße Xiaoming.
+148|ihr|你们是学生吗？|Seid ihr Schüler?
+149|Jahr|我学了两年汉语。|Ich habe zwei Jahre Chinesisch gelernt.
+150|Sie (höflich)|您好，请坐。|Guten Tag, bitte setzen Sie sich.
+151|Milch|我每天早上喝牛奶。|Ich trinke jeden Morgen Milch.
+152|weiblich|我们的老师是女的。|Unsere Lehrkraft ist eine Frau.
+153|Tochter|他有两个女儿。|Er hat zwei Töchter.
+154|feste Freundin|这是我的女朋友。|Das ist meine Freundin.
+155|Frau, Dame (Anrede)|女士们，先生们，你们好！|Meine Damen und Herren, guten Tag!
+156|Freund(in)|他是我的好朋友。|Er ist mein guter Freund.
+157|billig|这里的水果很便宜。|Das Obst hier ist billig.
+158|hübsch, schön|你的衣服很漂亮。|Deine Kleidung ist sehr schön.
+159|Apfel|我想买几个苹果。|Ich möchte ein paar Äpfel kaufen.
+160|sieben|我七点吃早饭。|Ich frühstücke um sieben.
+161|aufstehen|你每天几点起床？|Wann stehst du jeden Tag auf?
+162|tausend|这个电脑三千块。|Dieser Computer kostet dreitausend Yuan.
+163|vorn; vor, früher|前面就是学校。|Vorne ist gleich die Schule.
+164|Geld|你有钱吗？|Hast du Geld?
+165|bitten; einladen; bitte|请进！|Bitte herein!
+166|Entschuldigung, darf ich fragen …|请问，超市在哪儿？|Entschuldigung, wo ist der Supermarkt?
+167|gehen, hingehen, fahren|我们去学校吧。|Lass uns zur Schule gehen.
+168|letztes Jahr|我去年去了北京。|Letztes Jahr war ich in Peking.
+169|heiß|今天太热了。|Heute ist es zu heiß.
+170|Mensch, Person|那个人是谁？|Wer ist diese Person?
+171|kennen; kennenlernen|我认识他。|Ich kenne ihn.
+172|Tag (Datum)|今天是十月一日。|Heute ist der 1. Oktober.
+173|drei|我有三个朋友。|Ich habe drei Freunde.
+174|Laden, Geschäft|商店几点开门？|Wann öffnet der Laden?
+175|oben; auf; hinaufgehen|书在桌子上。|Das Buch liegt auf dem Tisch.
+176|zur Arbeit gehen|我爸爸八点上班。|Mein Vater fängt um acht an zu arbeiten.
+177|Unterricht haben; zum Unterricht gehen|我们八点上课。|Unser Unterricht beginnt um acht.
+178|Vormittag|我上午有课。|Ich habe vormittags Unterricht.
+179|zur Schule gehen|你弟弟上学了吗？|Geht dein kleiner Bruder schon zur Schule?
+180|wenig|今天人很少。|Heute sind wenige Leute da.
+181|wer?|他是谁？|Wer ist er?
+182|was?|你想吃什么？|Was möchtest du essen?
+183|krank werden|她生病了，没来上课。|Sie ist krank geworden und nicht zum Unterricht gekommen.
+184|zehn|我们班有十个人。|In unserer Klasse sind zehn Leute.
+185|Zeit(punkt); wenn, als|你什么时候回家？|Wann gehst du nach Hause?
+186|Zeit|你有时间吗？|Hast du Zeit?
+187|Sache, Angelegenheit|你有什么事？|Was gibt's? / Worum geht es?
+188|sein (ist, sind)|我是德国人。|Ich bin Deutscher.
+189|Handy|我的手机没电了。|Mein Handy hat keinen Akku mehr.
+190|Buch|这是谁的书？|Wessen Buch ist das?
+191|Buchhandlung|我在书店买了一本书。|Ich habe in der Buchhandlung ein Buch gekauft.
+192|Wasser|我想喝水。|Ich möchte Wasser trinken.
+193|Obst|你喜欢吃什么水果？|Welches Obst isst du gern?
+194|schlafen|你睡了几个小时？|Wie viele Stunden hast du geschlafen?
+195|schlafen (gehen)|我十一点睡觉。|Ich gehe um elf schlafen.
+196|sprechen, sagen|你说什么？|Was sagst du?
+197|sprechen, reden|上课的时候不要说话。|Im Unterricht nicht reden.
+198|vier|我家有四个人。|Wir sind vier in meiner Familie.
+199|Lebensjahr (Alter)|你几岁？|Wie alt bist du?
+200|er|他是我哥哥。|Er ist mein älterer Bruder.
+201|sie (Plural, männl./gemischt)|他们都是学生。|Sie sind alle Schüler.
+202|es (Tier, Ding)|这是我的猫，它很可爱。|Das ist meine Katze, sie ist sehr süß.
+203|sie (Plural, Tiere/Dinge)|这些狗很小，它们很可爱。|Diese Hunde sind klein und sehr süß.
+204|sie (weiblich)|她是我的姐姐。|Sie ist meine ältere Schwester.
+205|sie (Plural, weiblich)|她们是我的同学。|Sie sind meine Mitschülerinnen.
+206|zu (sehr); äußerst|太贵了！|Das ist zu teuer!
+207|Tag; Himmel|我在北京住了三天。|Ich war drei Tage in Peking.
+208|Wetter|明天天气怎么样？|Wie wird das Wetter morgen?
+209|hören, zuhören|我喜欢听音乐。|Ich höre gern Musik.
+210|hören (wahrnehmen)|你听见了吗？|Hast du das gehört?
+211|Mitschüler(in), Kommiliton(in)|他是我的同学。|Er ist mein Mitschüler.
+212|außen, draußen|外面很冷。|Draußen ist es kalt.
+213|draußen, außen|孩子们在外边玩儿。|Die Kinder spielen draußen.
+214|spielen; sich amüsieren|我们去公园玩吧。|Lass uns im Park spielen gehen.
+215|spät|太晚了，我们回家吧。|Es ist zu spät, lass uns nach Hause gehen.
+216|Abendessen|我们晚饭吃什么？|Was essen wir zu Abend?
+217|Abend|晚上我在家学习。|Abends lerne ich zu Hause.
+218|Hallo? (am Telefon)|喂，你好！|Hallo? Guten Tag!
+219|fragen|我可以问你一个问题吗？|Darf ich dich etwas fragen?
+220|Frage; Problem|你有问题吗？|Hast du Fragen?
+221|ich|我是学生。|Ich bin Schüler.
+222|wir|我们一起去吧。|Lass uns zusammen gehen.
+223|fünf|我五点下课。|Ich habe um fünf Schluss.
+224|Mittagessen|我们一起吃午饭吧。|Lass uns zusammen zu Mittag essen.
+225|mögen, gern haben|我喜欢吃饺子。|Ich esse gern Jiaozi.
+226|unten; unter; hinuntergehen; Mal|猫在桌子下面。|Die Katze ist unter dem Tisch.
+227|Feierabend machen|你几点下班？|Wann hast du Feierabend?
+228|Unterrichtsschluss haben|下课了，我们去吃饭吧。|Der Unterricht ist aus, lass uns essen gehen.
+229|Nachmittag|下午我去打球。|Nachmittags gehe ich Ball spielen.
+230|es regnet|外面下雨了。|Draußen regnet es.
+231|Herr; Ehemann|王先生在吗？|Ist Herr Wang da?
+232|jetzt|现在几点了？|Wie spät ist es jetzt?
+233|denken; wollen, möchten; vermissen|我想去中国。|Ich möchte nach China.
+234|klein; jung|我的房间很小。|Mein Zimmer ist klein.
+235|Kind(er) (freundliche Anrede)|小朋友，你几岁了？|Na, Kleiner, wie alt bist du?
+236|Stunde|我每天学习两个小时。|Ich lerne jeden Tag zwei Stunden.
+237|Grundschule|我弟弟在上小学。|Mein kleiner Bruder geht in die Grundschule.
+238|Grundschüler(in)|她是一个小学生。|Sie ist Grundschülerin.
+239|einige, ein paar|我买了一些水果。|Ich habe etwas Obst gekauft.
+240|schreiben|你会写汉字吗？|Kannst du Schriftzeichen schreiben?
+241|danke|谢谢你！|Danke dir!
+242|neu|这是我的新手机。|Das ist mein neues Handy.
+243|Woche|这个星期我很忙。|Diese Woche bin ich sehr beschäftigt.
+244|Sonntag|星期日我休息。|Sonntags ruhe ich mich aus.
+245|Sonntag (umgangssprachlich)|星期天我们去公园吧。|Lass uns am Sonntag in den Park gehen.
+246|sich ausruhen, Pause machen|你累了，休息一下吧。|Du bist müde, ruh dich kurz aus.
+247|lernen|我在学汉语。|Ich lerne Chinesisch.
+248|Schüler(in), Student(in)|我是学生。|Ich bin Schüler.
+249|lernen, studieren|我每天学习汉语。|Ich lerne jeden Tag Chinesisch.
+250|Schule|我们学校很大。|Unsere Schule ist sehr groß.
+251|Schnee|外面下雪了。|Draußen schneit es.
+252|wollen; brauchen; werden (gleich)|我要一杯茶。|Ich möchte eine Tasse Tee.
+253|auch|我也是学生。|Ich bin auch Schüler.
+254|eins|我有一个问题。|Ich habe eine Frage.
+255|Hälfte|我吃了一半。|Ich habe die Hälfte gegessen.
+256|ein bisschen|我会说一点儿汉语。|Ich kann ein bisschen Chinesisch.
+257|einmal, kurz (mildert Verb ab)|请等一下。|Warte bitte kurz.
+258|einige, etwas|我有一些问题。|Ich habe ein paar Fragen.
+259|Kleidung|我想买新衣服。|Ich möchte neue Kleidung kaufen.
+260|Arzt, Ärztin|我妈妈是医生。|Meine Mutter ist Ärztin.
+261|Krankenhaus|他在医院工作。|Er arbeitet im Krankenhaus.
+262|Stuhl|请坐这把椅子。|Bitte setz dich auf diesen Stuhl.
+263|haben; es gibt|我有一只猫。|Ich habe eine Katze.
+264|manche, einige|有的人喜欢喝茶，有的人喜欢喝咖啡。|Manche trinken gern Tee, manche gern Kaffee.
+265|ein bisschen (meist negativ)|今天有点儿冷。|Heute ist es ein bisschen kalt.
+266|manche; etwas, ein wenig|有些问题很难。|Manche Fragen sind schwer.
+267|Regen|今天有雨。|Heute gibt es Regen.
+268|Yuan (Währung)|这本书二十元。|Dieses Buch kostet zwanzig Yuan.
+269|Monat; Mond|我十月去中国。|Im Oktober fahre ich nach China.
+270|wieder, noch einmal; dann erst|请再说一遍。|Sag es bitte noch einmal.
+271|Auf Wiedersehen!|老师再见！|Auf Wiedersehen, Lehrer!
+272|sich befinden; in, an; gerade (tun)|我在家。|Ich bin zu Hause.
+273|früh|你今天来得很早。|Du bist heute früh gekommen.
+274|Frühstück|你吃早饭了吗？|Hast du schon gefrühstückt?
+275|Morgen, früh morgens|早上好！|Guten Morgen!
+276|wie?; warum?|这个字怎么写？|Wie schreibt man dieses Zeichen?
+277|wie? wie ist es?|你觉得这个电影怎么样？|Wie findest du diesen Film?
+278|suchen; finden|你在找什么？|Was suchst du?
+279|dies, das (hier)|这是我的老师。|Das ist mein Lehrer.
+280|hier (auf dieser Seite)|请到这边来。|Komm bitte hierher.
+281|diese(r/s)|这个多少钱？|Wie viel kostet das hier?
+282|hier|这里是我的学校。|Hier ist meine Schule.
+283|hier (umgangssprachlich)|你的书在我这儿。|Dein Buch ist bei mir.
+284|diese (Plural)|这些书都是我的。|Diese Bücher gehören alle mir.
+285|wirklich; echt|你真好！|Du bist echt lieb!
+286|gerade (dabei sein)|我正在吃饭。|Ich esse gerade.
+287|Zählwort für Tiere u. a.|我有一只狗。|Ich habe einen Hund.
+288|wissen|我不知道。|Ich weiß es nicht.
+289|China|我想去中国。|Ich möchte nach China.
+290|Chinesisch (Sprache, Schrift)|你的中文说得很好。|Du sprichst sehr gut Chinesisch.
+291|Mittag|中午我们一起吃饭吧。|Lass uns mittags zusammen essen.
+292|Mittelschule (weiterführende Schule)|我在中学学习。|Ich gehe auf eine weiterführende Schule.
+293|Mittelschüler(in)|他是中学生。|Er ist Schüler an einer weiterführenden Schule.
+294|wohnen|你住在哪儿？|Wo wohnst du?
+295|Tisch|桌子上有一本书。|Auf dem Tisch liegt ein Buch.
+296|Schriftzeichen; Wort|这个字我不认识。|Dieses Zeichen kenne ich nicht.
+297|gestern|昨天我去了超市。|Gestern war ich im Supermarkt.
+298|sitzen; fahren mit|请坐！|Bitte setz dich!
+299|machen, tun|你在做什么？|Was machst du gerade?
+300|kochen, Essen machen|妈妈在做饭。|Mama kocht gerade.

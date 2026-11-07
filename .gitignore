@@ -1,0 +1,5 @@
+.DS_Store
+*.docx
+precache.json
+__pycache__/
+artefakt/

@@ -1,0 +1,250 @@
+501|Tante; Anrede für ältere Frauen|阿姨，您好！|Guten Tag, (Tante)!
+502|klein (Körper), niedrig|我比我哥哥矮。|Ich bin kleiner als mein großer Bruder.
+503|Ehepartner(in)|这是我爱人。|Das ist mein Mann / meine Frau.
+504|ruhig, still|图书馆里很安静。|In der Bibliothek ist es sehr ruhig.
+505|sicher; Sicherheit|晚上一个人走路不安全。|Abends allein zu laufen ist nicht sicher.
+506|Zählwort für Stühle, Messer u. a.; Objektmarker|请把门关上。|Mach bitte die Tür zu.
+507|Schulklasse|我们班级有四十个人。|In unserer Klasse sind vierzig Leute.
+508|tragen, wegräumen; umziehen|帮我搬一下桌子。|Hilf mir kurz, den Tisch zu tragen.
+509|umziehen (Wohnung)|我们下个月搬家。|Wir ziehen nächsten Monat um.
+510|erledigen, machen|这件事很难办。|Diese Sache ist schwer zu erledigen.
+511|Methode, Ausweg|我没有办法。|Ich weiß keinen Ausweg.
+512|Büro|老师在办公室。|Der Lehrer ist im Büro.
+513|ein halber Tag; lange Zeit|我等了你半天！|Ich habe ewig auf dich gewartet!
+514|helfen; Hilfe|谢谢你的帮助。|Danke für deine Hilfe.
+515|satt|我吃饱了。|Ich bin satt.
+516|Zeitung|爷爷每天看报纸。|Opa liest jeden Tag Zeitung.
+517|Norden|学校在城市的北边。|Die Schule liegt im Norden der Stadt.
+518|Norden; Nordchina|北方的冬天很冷。|Im Norden sind die Winter sehr kalt.
+519|Passivmarker („von … werden“)|我的手机被偷了。|Mein Handy wurde gestohlen.
+520|ziemlich; vergleichen|今天比较冷。|Heute ist es ziemlich kalt.
+521|zum Beispiel|我喜欢运动，比如游泳和跑步。|Ich mag Sport, zum Beispiel Schwimmen und Joggen.
+522|Wettkampf, Spiel; antreten|明天有足球比赛。|Morgen ist ein Fußballspiel.
+523|Notizen, Mitschrift|上课要记笔记。|Im Unterricht soll man mitschreiben.
+524|Notizbuch; Laptop|我的笔记本电脑坏了。|Mein Laptop ist kaputt.
+525|müssen, unbedingt|你必须早点儿睡觉。|Du musst früher schlafen gehen.
+526|sich verändern|天气变冷了。|Das Wetter ist kalt geworden.
+527|sich verwandeln in, werden zu|水变成了冰。|Das Wasser ist zu Eis geworden.
+528|Veränderung; sich verändern|这里的变化很大。|Hier hat sich viel verändert.
+529|Mal (von Anfang bis Ende)|请再读一遍。|Lies es bitte noch einmal ganz vor.
+530|aufführen, vorspielen; Aufführung|她在晚会上表演了唱歌。|Sie hat auf der Feier ein Lied vorgetragen.
+531|andere(s)|你还要别的吗？|Möchtest du noch etwas anderes?
+532|andere (Leute)|不要告诉别人。|Erzähl es niemand anderem.
+533|Hotel, Gästehaus|我们住在一家小宾馆。|Wir wohnen in einem kleinen Hotel.
+534|Eis (gefroren)|冬天河上有冰。|Im Winter ist Eis auf dem Fluss.
+535|Speiseeis|夏天我喜欢吃冰激凌。|Im Sommer esse ich gern Eis.
+536|Kühlschrank|牛奶在冰箱里。|Die Milch ist im Kühlschrank.
+537|Patient(in)|医生在给病人看病。|Der Arzt untersucht einen Patienten.
+538|nicht nur (… sondern auch)|他不但会说汉语，而且会写汉字。|Er kann nicht nur Chinesisch sprechen, sondern auch Zeichen schreiben.
+539|verschwunden sein; sich nicht sehen|我的钥匙不见了。|Mein Schlüssel ist weg.
+540|bald; vor Kurzem|不久以后我们会再见面。|Bald sehen wir uns wieder.
+541|verschieden, unterschiedlich|我们的想法不同。|Wir haben unterschiedliche Ansichten.
+542|geht nicht; schlecht|这样不行。|So geht das nicht.
+543|nicht nötig|不用谢！|Keine Ursache!
+544|erst; gerade erst|他十点才起床。|Er ist erst um zehn aufgestanden.
+545|Speisekarte|服务员，请给我菜单。|Bedienung, bitte die Speisekarte.
+546|teilnehmen|你参加比赛吗？|Nimmst du am Wettkampf teil?
+547|Gras|草是绿色的。|Gras ist grün.
+548|Rasen, Wiese|孩子们在草地上玩儿。|Die Kinder spielen auf der Wiese.
+549|Stockwerk; Schicht|我住在五层。|Ich wohne im fünften Stock.
+550|nachschlagen, überprüfen|我去词典里查一下。|Ich schlage es kurz im Wörterbuch nach.
+551|schlecht; fehlen (Zeit: vor)|现在差五分八点。|Es ist jetzt fünf vor acht.
+552|ungefähr; fast gleich|我们差不多到了。|Wir sind fast da.
+553|probieren, kosten|你尝尝这个菜。|Probier mal dieses Gericht.
+554|oft|我常去那家饭馆。|Ich gehe oft in dieses Restaurant.
+555|oft, häufig|他常常迟到。|Er kommt oft zu spät.
+556|häufig vorkommend|这是一个常见的问题。|Das ist ein häufiges Problem.
+557|häufig gebraucht|这些都是常用的词。|Das sind alles häufig gebrauchte Wörter.
+558|Hemd|他穿着白衬衫。|Er trägt ein weißes Hemd.
+559|Note, Ergebnis, Leistung|她的成绩很好。|Ihre Noten sind sehr gut.
+560|Stadt|北京是一个大城市。|Peking ist eine große Stadt.
+561|zu spät kommen|对不起，我迟到了。|Entschuldigung, ich bin zu spät.
+562|aufbrechen, losfahren|我们几点出发？|Wann brechen wir auf?
+563|geboren werden|我出生在柏林。|Ich bin in Berlin geboren.
+564|aus dem Krankenhaus entlassen werden|奶奶明天出院。|Oma wird morgen aus dem Krankenhaus entlassen.
+565|Mittelstufe (Klassen 7–9)|我妹妹在上初中。|Meine kleine Schwester geht in die Mittelstufe.
+566|außer; abgesehen von|除了他，大家都来了。|Außer ihm sind alle gekommen.
+567|Schiff, Boot|我们坐船去吧。|Lass uns mit dem Schiff fahren.
+568|Frühling|春天到了，花都开了。|Der Frühling ist da, alle Blumen blühen.
+569|Wörterbuch|这个词你可以查词典。|Dieses Wort kannst du im Wörterbuch nachschlagen.
+570|klug, intelligent|这个孩子很聪明。|Dieses Kind ist sehr klug.
+571|putzen, aufräumen|我在打扫房间。|Ich räume gerade mein Zimmer auf.
+572|vorhaben, planen; Plan|你打算什么时候去？|Wann hast du vor hinzugehen?
+573|ungefähr, wahrscheinlich|他大概不来了。|Er kommt wahrscheinlich nicht mehr.
+574|Erwachsene(r)|这是大人的事。|Das ist Sache der Erwachsenen.
+575|Größe|这件衣服大小正好。|Dieses Kleidungsstück hat genau die richtige Größe.
+576|Großer Panda|大熊猫非常可爱。|Große Pandas sind sehr süß.
+577|Mantel|天冷了，穿上大衣吧。|Es ist kalt geworden, zieh deinen Mantel an.
+578|mitnehmen, bringen; Band, Gürtel|别忘了带雨伞。|Vergiss nicht, einen Regenschirm mitzunehmen.
+579|sich Sorgen machen|别担心，我没事。|Mach dir keine Sorgen, mir geht's gut.
+580|Kuchen, Torte|我给你买了一个生日蛋糕。|Ich habe dir eine Geburtstagstorte gekauft.
+581|natürlich, selbstverständlich|当然可以！|Natürlich geht das!
+582|überall|到处都是人。|Überall sind Menschen.
+583|bekommen, erhalten|他得了第一名。|Er hat den ersten Platz bekommen.
+584|bekommen, erlangen|我得到了很多帮助。|Ich habe viel Hilfe bekommen.
+585|Punkte erzielen; Punktzahl|他这次考试得分很高。|Er hat diesmal in der Prüfung viele Punkte erzielt.
+586|falls, wenn (am Satzende des Nebensatzes)|明天下雨的话，我就不去了。|Falls es morgen regnet, gehe ich nicht hin.
+587|müssen|我得走了。|Ich muss los.
+588|Lampe, Licht|请把灯打开。|Mach bitte das Licht an.
+589|Erde, Boden; Ort|地上有一本书。|Auf dem Boden liegt ein Buch.
+590|Ort (eines Ereignisses)|开会的地点在哪儿？|Wo findet die Besprechung statt?
+591|Ort, Stelle|这是一个很美的地方。|Das ist ein sehr schöner Ort.
+592|Landkarte|你有北京的地图吗？|Hast du einen Stadtplan von Peking?
+593|Strom, Elektrizität|手机没电了。|Das Handy hat keinen Akku mehr.
+594|Aufzug|我们坐电梯上去吧。|Lass uns mit dem Aufzug hochfahren.
+595|E-Book|我喜欢看电子书。|Ich lese gern E-Books.
+596|verlieren; wegwerfen|我把钱包丢了。|Ich habe mein Portemonnaie verloren.
+597|Osten|太阳从东边出来。|Die Sonne geht im Osten auf.
+598|Nordosten|东北的冬天特别冷。|Im Nordosten Chinas ist der Winter besonders kalt.
+599|Osten; östlich|东方文化很有意思。|Die östliche Kultur ist sehr interessant.
+600|Südosten|学校在城市的东南边。|Die Schule liegt im Südosten der Stadt.
+601|Winter|冬天常常下雪。|Im Winter schneit es oft.
+602|verstehen, wissen (wie)|他懂得怎么照顾别人。|Er weiß, wie man sich um andere kümmert.
+603|Tier|你喜欢什么动物？|Welche Tiere magst du?
+604|Zoo|我们去动物园看大熊猫吧。|Lass uns im Zoo die Pandas anschauen.
+605|kurz|我的头发很短。|Meine Haare sind kurz.
+606|kurze Hose, Shorts|夏天我常穿短裤。|Im Sommer trage ich oft Shorts.
+607|Abschnitt, Strecke; Zählwort|这段路很难走。|Dieser Abschnitt ist schwer zu gehen.
+608|trainieren, Sport treiben|我每天早上锻炼身体。|Ich trainiere jeden Morgen.
+609|Dialog; sich unterhalten|请两个人一组对话。|Bitte führt in Zweiergruppen einen Dialog.
+610|hungrig|我饿了，我们去吃饭吧。|Ich habe Hunger, lass uns essen gehen.
+611|außerdem, und zudem|这家饭馆很便宜，而且很好吃。|Das Restaurant ist billig und außerdem lecker.
+612|Ohr|我耳朵疼。|Mein Ohr tut weh.
+613|Kopfhörer|我用耳机听音乐。|Ich höre Musik mit Kopfhörern.
+614|schicken, senden; ausgeben|我给你发了一个短信。|Ich habe dir eine SMS geschickt.
+615|Fieber haben|孩子发烧了。|Das Kind hat Fieber.
+616|geschehen, passieren|发生了什么事？|Was ist passiert?
+617|entdecken, bemerken|我发现他不在家。|Ich habe bemerkt, dass er nicht zu Hause ist.
+618|entwickeln; Entwicklung|这个城市发展得很快。|Diese Stadt entwickelt sich sehr schnell.
+619|praktisch, bequem|住在这儿很方便。|Hier zu wohnen ist sehr praktisch.
+620|Instantnudeln|我晚上吃了方便面。|Ich habe abends Instantnudeln gegessen.
+621|Methode|学汉语有很多方法。|Es gibt viele Methoden, Chinesisch zu lernen.
+622|Richtung|你走错方向了。|Du gehst in die falsche Richtung.
+623|Haus|他们买了一个新房子。|Sie haben ein neues Haus gekauft.
+624|legen, stellen; freilassen|把书放在桌子上。|Leg das Buch auf den Tisch.
+625|Ferien/Urlaub haben|我们下周放假。|Nächste Woche haben wir Ferien.
+626|beruhigt sein|放心吧，我会小心的。|Keine Sorge, ich passe auf.
+627|Schulschluss haben|我们四点放学。|Um vier ist Schulschluss.
+628|trennen, sich trennen|把这两种东西分开放。|Leg diese beiden Sorten getrennt hin.
+629|Wind|今天风很大。|Heute ist es sehr windig.
+630|Zählwort für Briefe|我给他写了一封信。|Ich habe ihm einen Brief geschrieben.
+631|Ehepaar|他们是一对夫妻。|Sie sind ein Ehepaar.
+632|dienen, bedienen; Service|这家饭店的服务很好。|Der Service in diesem Restaurant ist sehr gut.
+633|Umgebung, in der Nähe|附近有银行吗？|Gibt es hier in der Nähe eine Bank?
+634|wiederholen (Lernstoff)|考试前要好好复习。|Vor der Prüfung muss man gut wiederholen.
+635|sollen; an der Reihe sein|我该走了。|Ich sollte jetzt gehen.
+636|sauber|房间很干净。|Das Zimmer ist sehr sauber.
+637|fühlen, empfinden|我感到很累。|Ich fühle mich sehr müde.
+638|Erkältung; sich erkälten|我感冒了。|Ich bin erkältet.
+639|sich interessieren für|我对中国文化很感兴趣。|Ich interessiere mich sehr für chinesische Kultur.
+640|tun, machen (umgangssprachlich)|你在干什么？|Was machst du gerade?
+641|gerade (erst), eben|我刚到家。|Ich bin gerade erst nach Hause gekommen.
+642|gerade eben, vorhin|刚才谁给我打电话了？|Wer hat mich vorhin angerufen?
+643|gerade eben; knapp|我刚刚吃完饭。|Ich habe gerade eben fertig gegessen.
+644|Hochgeschwindigkeitszug|坐高铁去上海很快。|Mit dem Schnellzug ist man schnell in Shanghai.
+645|gemäß, laut; Grundlage|根据天气预报，明天会下雨。|Laut Wettervorhersage regnet es morgen.
+646|noch (mehr), -er|今天比昨天更冷。|Heute ist es noch kälter als gestern.
+647|Werktag|工作日我没有时间。|An Werktagen habe ich keine Zeit.
+648|Kilogramm|我买了两公斤苹果。|Ich habe zwei Kilo Äpfel gekauft.
+649|Park|我们去公园走走吧。|Lass uns im Park spazieren gehen.
+650|Geschichte, Erzählung|奶奶给我讲了一个故事。|Oma hat mir eine Geschichte erzählt.
+651|wehen (Wind); rasieren, schaben|外面刮大风了。|Draußen weht ein starker Wind.
+652|schließen; ausschalten|请关灯。|Mach bitte das Licht aus.
+653|(Gerät) ausschalten|上课时请关机。|Schaltet im Unterricht bitte die Handys aus.
+654|Beziehung, Verbindung|我们的关系很好。|Wir haben ein gutes Verhältnis.
+655|sich kümmern um, Anteil nehmen|谢谢你的关心。|Danke, dass du dich um mich sorgst.
+656|über, bezüglich|这是一本关于中国历史的书。|Das ist ein Buch über chinesische Geschichte.
+657|aufmerksam verfolgen; (online) folgen|很多人关注这个问题。|Viele Menschen verfolgen dieses Thema.
+658|Staat, Land|中国是一个很大的国家。|China ist ein sehr großes Land.
+659|ein Fest feiern|过节的时候我们一家人在一起。|An Feiertagen ist unsere Familie zusammen.
+660|Vergangenheit, früher|过去我不喜欢运动。|Früher mochte ich keinen Sport.
+661|Meer|我想去海边玩儿。|Ich möchte ans Meer fahren.
+662|Angst haben|我害怕狗。|Ich habe Angst vor Hunden.
+663|sehr viele|好多人在排队。|Sehr viele Leute stehen Schlange.
+664|lange Zeit|好久不见！|Lange nicht gesehen!
+665|scheinen, als ob|他好像生病了。|Er scheint krank zu sein.
+666|Nummer|你的手机号码是多少？|Wie ist deine Handynummer?
+667|passend, geeignet|这件衣服很合适。|Dieses Kleidungsstück passt sehr gut.
+668|Fluss|河里有很多鱼。|Im Fluss gibt es viele Fische.
+669|Tafel|老师在黑板上写字。|Der Lehrer schreibt an die Tafel.
+670|Ampel|看到红绿灯要停下来。|An der Ampel muss man anhalten.
+671|später, danach (Vergangenheit)|后来我们成了好朋友。|Später wurden wir gute Freunde.
+672|übernächstes Jahr|后年我就大学毕业了。|Übernächstes Jahr schließe ich mein Studium ab.
+673|übermorgen|后天是星期六。|Übermorgen ist Samstag.
+674|Reisepass|别忘了带护照。|Vergiss deinen Reisepass nicht.
+675|Garten|她家有一个小花园。|Sie haben einen kleinen Garten.
+676|Maler(in)|他想当画家。|Er möchte Maler werden.
+677|willkommen heißen|欢迎你来我家！|Willkommen bei mir zu Hause!
+678|zurückgeben|我明天还你书。|Ich gebe dir das Buch morgen zurück.
+679|Umwelt, Umgebung|这里的环境很好。|Die Umgebung hier ist sehr schön.
+680|wechseln, tauschen|我想换一件衣服。|Ich möchte das Kleidungsstück umtauschen.
+681|gelb (Farbe)|她穿着黄色的裙子。|Sie trägt einen gelben Rock.
+682|antworten; Antwort|请回答我的问题。|Beantworte bitte meine Frage.
+683|Versammlung, Treffen|今天下午有一个会。|Heute Nachmittag gibt es eine Besprechung.
+684|Konferenz, Sitzung|会议几点开始？|Wann beginnt die Sitzung?
+685|oder|你今天或明天来都可以。|Du kannst heute oder morgen kommen.
+686|oder (in Aussagen)|我们可以坐地铁或者打车。|Wir können U-Bahn fahren oder ein Taxi nehmen.
+687|fast, beinahe|他几乎每天都迟到。|Er kommt fast jeden Tag zu spät.
+688|Gelegenheit, Chance|这是一个好机会。|Das ist eine gute Gelegenheit.
+689|Huhn|我不吃鸡肉。|Ich esse kein Hühnerfleisch.
+690|äußerst|今天热极了。|Heute ist es extrem heiß.
+691|eilig, ungeduldig; sich sorgen|别急，慢慢来。|Keine Eile, immer mit der Ruhe.
+692|sich merken; aufschreiben|我记不住这么多汉字。|So viele Zeichen kann ich mir nicht merken.
+693|Jahreszeit, Saison|一年有四季。|Ein Jahr hat vier Jahreszeiten.
+694|Jahreszeit|你最喜欢哪个季节？|Welche Jahreszeit magst du am liebsten?
+695|addieren, hinzufügen|二加三等于五。|Zwei plus drei ist fünf.
+696|Ferienzeit, Urlaub|假期你去哪儿了？|Wo warst du in den Ferien?
+697|durchhalten, festhalten an|学汉语要坚持。|Beim Chinesischlernen muss man dranbleiben.
+698|untersuchen, kontrollieren|医生给我检查了身体。|Der Arzt hat mich untersucht.
+699|Fahrkarten kontrollieren|上车前要检票。|Vor dem Einsteigen werden die Fahrkarten kontrolliert.
+700|einfach|这个问题很简单。|Diese Frage ist sehr einfach.
+701|sich treffen|我们明天见面吧。|Lass uns uns morgen treffen.
+702|gesund|祝你身体健康！|Ich wünsche dir Gesundheit!
+703|sprechen, erzählen; erklären|老师讲得很清楚。|Der Lehrer erklärt sehr klar.
+704|Jiao (1/10 Yuan)|这个五毛钱，也就是五角。|Das kostet fünf Mao, also fünf Jiao.
+705|Fuß|我的脚很疼。|Mein Fuß tut sehr weh.
+706|abholen; empfangen; annehmen (Telefon)|我去机场接你。|Ich hole dich am Flughafen ab.
+707|Straße|这条街上有很多商店。|In dieser Straße gibt es viele Läden.
+708|Zählwort für Unterrichtsstunden; Fest|今天有四节课。|Heute habe ich vier Stunden Unterricht.
+709|Programm, Sendung|这个电视节目很有意思。|Diese Fernsehsendung ist sehr interessant.
+710|Feiertag, Fest|春节是中国最重要的节日。|Das Frühlingsfest ist Chinas wichtigster Feiertag.
+711|heiraten|他们去年结婚了。|Sie haben letztes Jahr geheiratet.
+712|enden, beenden|会议结束了。|Die Sitzung ist vorbei.
+713|Schwestern|你有姐妹吗？|Hast du Schwestern?
+714|lösen (Problem)|这个问题怎么解决？|Wie löst man dieses Problem?
+715|leihen, ausleihen|我可以借你的笔吗？|Kann ich mir deinen Stift leihen?
+716|Jin (Pfund, 500 g)|我买了一斤苹果。|Ich habe ein Pfund Äpfel gekauft.
+717|vorbeigehen an; durch; Verlauf|我每天经过这家书店。|Ich komme jeden Tag an dieser Buchhandlung vorbei.
+718|Manager(in), Leiter(in)|他是这家公司的经理。|Er ist der Manager dieser Firma.
+719|lange|我等了很久。|Ich habe lange gewartet.
+720|Alkohol, Wein, Schnaps|我爸爸不喝酒。|Mein Vater trinkt keinen Alkohol.
+721|alt (nicht neu)|这件衣服太旧了。|Dieses Kleidungsstück ist zu alt.
+722|Zählwort für Sätze|我想跟你说几句话。|Ich möchte dir ein paar Worte sagen.
+723|Satz|请用这个词造一个句子。|Bilde bitte einen Satz mit diesem Wort.
+724|entscheiden; Entscheidung|我决定学习中文。|Ich habe beschlossen, Chinesisch zu lernen.
+725|Karte (Bank-, Fahr-)|我忘了带银行卡。|Ich habe meine Bankkarte vergessen.
+726|blühen|春天花都开花了。|Im Frühling blühen die Blumen.
+727|eine Sitzung abhalten|经理在开会。|Der Manager ist in einer Besprechung.
+728|(Gerät) einschalten|手机开机了吗？|Ist das Handy eingeschaltet?
+729|fröhlich, glücklich|今天玩得很开心。|Heute hatten wir viel Spaß.
+730|anscheinend, so wie es aussieht|看来今天会下雨。|Es sieht so aus, als würde es heute regnen.
+731|aber; doch wirklich|他很聪明，可不太努力。|Er ist klug, aber nicht sehr fleißig.
+732|süß, niedlich|这只小狗真可爱！|Dieser kleine Hund ist echt süß!
+733|aber|我想去，可是没时间。|Ich will hin, aber ich habe keine Zeit.
+734|durstig|我渴了，想喝水。|Ich habe Durst und möchte Wasser trinken.
+735|Viertelstunde|现在八点一刻。|Es ist jetzt Viertel nach acht.
+736|Gast|今天家里来了很多客人。|Heute sind viele Gäste zu Besuch.
+737|Lehrbuch|请打开课本。|Öffnet bitte eure Lehrbücher.
+738|Lektionstext|请把课文读一遍。|Lies bitte den Lektionstext einmal vor.
+739|Klimaanlage|太热了，开空调吧。|Es ist zu heiß, schalt die Klimaanlage an.
+740|weinen|孩子哭了。|Das Kind weint.
+741|Essstäbchen|你会用筷子吗？|Kannst du mit Stäbchen essen?
+742|Mineralwasser|给我一瓶矿泉水。|Gib mir eine Flasche Mineralwasser.
+743|stammen aus|他来自德国。|Er stammt aus Deutschland.
+744|blau|天很蓝。|Der Himmel ist sehr blau.
+745|alt (Alter); Präfix für Vertrautheit|我爷爷老了。|Mein Opa ist alt geworden.
+746|ältere Menschen, Senioren|我们应该帮助老人。|Wir sollten älteren Menschen helfen.
+747|verlassen, weggehen|他已经离开北京了。|Er hat Peking schon verlassen.
+748|Geschenk|这是送你的礼物。|Das ist ein Geschenk für dich.
+749|Geschichte (Fach, Vergangenheit)|我对中国历史很感兴趣。|Ich interessiere mich sehr für chinesische Geschichte.
+750|Gesicht|快去洗脸。|Wasch dir schnell das Gesicht.

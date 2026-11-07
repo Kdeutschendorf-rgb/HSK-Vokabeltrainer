@@ -1,0 +1,250 @@
+751|üben|我每天练写汉字。|Ich übe jeden Tag Zeichenschreiben.
+752|üben; Übung|我们来练习一下对话。|Lass uns den Dialog kurz üben.
+753|angenehm kühl|今天很凉快。|Heute ist es angenehm kühl.
+754|Zählwort für Fahrzeuge|门口停着一辆车。|Vor der Tür steht ein Auto.
+755|plaudern|我们聊了很长时间。|Wir haben lange geplaudert.
+756|plaudern, sich unterhalten|我喜欢和朋友聊天儿。|Ich unterhalte mich gern mit Freunden.
+757|verstehen, kennen; sich informieren|我不太了解他。|Ich kenne ihn nicht so gut.
+758|Nachbar(in)|我的邻居很热情。|Mein Nachbar ist sehr herzlich.
+759|im Ausland studieren|我想去中国留学。|Ich möchte in China studieren.
+760|Auslandsstudent(in)|我们学校有很多留学生。|An unserer Schule gibt es viele Auslandsstudierende.
+761|Treppe|我们走楼梯上去吧。|Lass uns die Treppe hochgehen.
+762|Straßenrand|路边有一家小店。|Am Straßenrand gibt es einen kleinen Laden.
+763|Kreuzung|在前面的路口往右走。|An der nächsten Kreuzung rechts abbiegen.
+764|Pferd|他会骑马。|Er kann reiten.
+765|Straße, Fahrbahn|过马路要看红绿灯。|Beim Überqueren der Straße auf die Ampel achten.
+766|sofort|我马上就来。|Ich komme sofort.
+767|zufrieden|你对成绩满意吗？|Bist du mit deiner Note zufrieden?
+768|Mao (1/10 Yuan, umgangssprachlich)|一瓶水两块五毛。|Eine Flasche Wasser kostet 2,50 Yuan.
+769|Meter|他身高一米八。|Er ist 1,80 m groß.
+770|vor (jemandem)|他走到我面前。|Er ging auf mich zu und stand vor mir.
+771|Namensliste|名单上有你的名字吗？|Steht dein Name auf der Liste?
+772|berühmte Person|他是一个名人。|Er ist eine berühmte Persönlichkeit.
+773|klar; verstehen|我明白了。|Ich habe verstanden.
+774|Mann|那个男人是谁？|Wer ist der Mann dort?
+775|Junge, männlicher Schüler|我们班男生比女生多。|In unserer Klasse gibt es mehr Jungen als Mädchen.
+776|Süden|我家在城市的南边。|Ich wohne im Süden der Stadt.
+777|Süden; Südchina|南方的冬天不太冷。|Im Süden sind die Winter nicht so kalt.
+778|schwer, schwierig|汉字很难写。|Chinesische Zeichen sind schwer zu schreiben.
+779|traurig|听到这个消息，我很难过。|Als ich die Nachricht hörte, war ich sehr traurig.
+780|hässlich|这件衣服很难看。|Dieses Kleidungsstück sieht hässlich aus.
+781|schwierige Frage, Problem|这道数学题是个难题。|Diese Matheaufgabe ist eine harte Nuss.
+782|unangenehm klingend|这首歌很难听。|Dieses Lied klingt schlecht.
+783|Jahrgangsstufe, Klasse|你上几年级？|In welcher Klasse bist du?
+784|jung|她看起来很年轻。|Sie sieht sehr jung aus.
+785|Rind, Kuh; (ugs.) krass|我不吃牛肉。|Ich esse kein Rindfleisch.
+786|sich anstrengen; fleißig|她学习很努力。|Sie lernt sehr fleißig.
+787|Frau|那个女人是我的老师。|Die Frau dort ist meine Lehrerin.
+788|Mädchen, Schülerin|女生们在跳舞。|Die Mädchen tanzen gerade.
+789|klettern, kriechen|我们周末去爬山吧。|Lass uns am Wochenende wandern gehen.
+790|fürchten; befürchten|我怕冷。|Ich bin kälteempfindlich.
+791|fotografieren|这里不能拍照。|Hier darf man nicht fotografieren.
+792|Teller|桌子上有一个盘子。|Auf dem Tisch steht ein Teller.
+793|dick|我最近胖了。|Ich habe in letzter Zeit zugenommen.
+794|Bier|爸爸喜欢喝啤酒。|Papa trinkt gern Bier.
+795|normalerweise, gewöhnlich|我平时七点起床。|Normalerweise stehe ich um sieben auf.
+796|Flasche|这个瓶子是空的。|Diese Flasche ist leer.
+797|eigentlich, in Wirklichkeit|其实我不喜欢吃肉。|Eigentlich esse ich nicht gern Fleisch.
+798|andere(s)|其他同学都走了。|Die anderen Mitschüler sind alle gegangen.
+799|seltsam, merkwürdig|真奇怪，他怎么还没来？|Seltsam, warum ist er noch nicht da?
+800|reiten, fahren (Rad)|我骑自行车上学。|Ich fahre mit dem Fahrrad zur Schule.
+801|aufstehen, sich erheben|你早上几点起？|Wann stehst du morgens auf?
+802|abheben (Flugzeug)|飞机马上就要起飞了。|Das Flugzeug hebt gleich ab.
+803|Auto|这辆汽车是新的。|Dieses Auto ist neu.
+804|Bleistift|考试要用铅笔。|In der Prüfung muss man Bleistift benutzen.
+805|vorletztes Jahr|前年我去了上海。|Vorletztes Jahr war ich in Shanghai.
+806|vorgestern|前天我见到了他。|Vorgestern habe ich ihn getroffen.
+807|klar, deutlich; genau wissen|我听得很清楚。|Ich habe es ganz deutlich gehört.
+808|um Urlaub/Freistellung bitten|我生病了，要请假。|Ich bin krank und muss mich abmelden.
+809|einladen (bezahlen)|今天我请客。|Heute lade ich ein.
+810|Herbst|北京的秋天很美。|Der Herbst in Peking ist sehr schön.
+811|Sportplatz, Spielfeld|我们在球场踢球。|Wir spielen auf dem Platz Fußball.
+812|Rock (Kleidung)|她穿了一条红裙子。|Sie trägt einen roten Rock.
+813|danach, dann|先洗手，然后吃饭。|Erst Hände waschen, dann essen.
+814|herzlich, warmherzig|中国人很热情。|Chinesen sind sehr gastfreundlich.
+815|erkennen, kennen|这个字你认得吗？|Erkennst du dieses Zeichen?
+816|meinen, der Ansicht sein|我认为他说得对。|Ich finde, er hat recht.
+817|gewissenhaft, ernsthaft|他做事很认真。|Er arbeitet sehr gewissenhaft.
+818|leicht, einfach|这个问题不容易。|Diese Frage ist nicht leicht.
+819|wenn, falls|如果明天下雨，我们就不去了。|Falls es morgen regnet, gehen wir nicht.
+820|Regenschirm|外面下雨了，带上伞吧。|Draußen regnet es, nimm einen Schirm mit.
+821|fegen, kehren; scannen|请扫一下这个二维码。|Scann bitte diesen QR-Code.
+822|Sofa|他坐在沙发上看电视。|Er sitzt auf dem Sofa und sieht fern.
+823|Berg|这座山很高。|Dieser Berg ist sehr hoch.
+824|Oberteil, Jacke|这件上衣很好看。|Dieses Oberteil sieht gut aus.
+825|Löffel|我需要一个勺子。|Ich brauche einen Löffel.
+826|an der Seite, bei sich|他身边有很多朋友。|Er hat viele Freunde um sich.
+827|Körpergröße|你的身高是多少？|Wie groß bist du?
+828|Leben; leben|我很喜欢这里的生活。|Mir gefällt das Leben hier sehr.
+829|sich ärgern, wütend werden|别生气了。|Ärger dich nicht mehr.
+830|Laut, Ton; Zählwort für Laute|请说大声一点儿。|Sprich bitte etwas lauter.
+831|Stimme, Geräusch|我听到一个奇怪的声音。|Ich habe ein seltsames Geräusch gehört.
+832|Welt|我想去世界各地旅游。|Ich möchte überall auf der Welt reisen.
+833|Stadt (Verwaltung); Markt|他住在上海市。|Er wohnt in der Stadt Shanghai.
+834|ausprobieren, anprobieren|我可以试试这件衣服吗？|Kann ich dieses Kleidungsstück anprobieren?
+835|Raum, Zimmer|我们在教室里上课。|Wir haben Unterricht im Klassenzimmer.
+836|empfangen, einsammeln|老师收了我们的作业。|Der Lehrer hat unsere Hausaufgaben eingesammelt.
+837|erhalten, bekommen|我收到了你的信。|Ich habe deinen Brief bekommen.
+838|erleiden, empfangen|他受伤了。|Er hat sich verletzt.
+839|erhalten, erfahren|他受到了老师的表扬。|Er wurde vom Lehrer gelobt.
+840|dünn, schlank|她很瘦。|Sie ist sehr schlank.
+841|Onkel; Anrede für Männer|叔叔，您好！|Guten Tag, Onkel!
+842|Baum|公园里有很多树。|Im Park gibt es viele Bäume.
+843|Mathematik|我数学不太好。|Ich bin nicht so gut in Mathe.
+844|bürsten, putzen; (Karte) durchziehen|我每天刷两次牙。|Ich putze mir zweimal am Tag die Zähne.
+845|Paar (Zählwort)|我买了一双鞋。|Ich habe ein Paar Schuhe gekauft.
+846|Niveau|你的汉语水平很高。|Dein Chinesischniveau ist sehr hoch.
+847|Fahrer(in)|我爸爸是出租车司机。|Mein Vater ist Taxifahrer.
+848|die vier Jahreszeiten|这里四季都很美。|Hier ist es zu allen Jahreszeiten schön.
+849|Sonne|太阳出来了。|Die Sonne ist herausgekommen.
+850|Zucker; Bonbon|咖啡里不要放糖。|Bitte keinen Zucker in den Kaffee.
+851|besonders|今天特别热。|Heute ist es besonders heiß.
+852|verbessern, erhöhen|我想提高我的汉语水平。|Ich möchte mein Chinesisch verbessern.
+853|Sport (Schulfach)|我最喜欢体育课。|Am liebsten mag ich Sportunterricht.
+854|Sporthalle|我们在体育馆打篮球。|Wir spielen in der Sporthalle Basketball.
+855|süß|这个西瓜很甜。|Diese Wassermelone ist sehr süß.
+856|springen, hüpfen|他跳得很高。|Er springt sehr hoch.
+857|hören, dass …|听说你要去中国？|Ich habe gehört, du gehst nach China?
+858|ziemlich, recht|这个电影挺好看的。|Der Film ist ziemlich gut.
+859|Kollege, Kollegin|他是我的同事。|Er ist mein Kollege.
+860|zustimmen, einverstanden sein|我同意你的看法。|Ich stimme deiner Meinung zu.
+861|Haare (Kopf)|她的头发很长。|Ihre Haare sind sehr lang.
+862|plötzlich|天突然下雨了。|Plötzlich fing es an zu regnen.
+863|Bibliothek|我在图书馆借了一本书。|Ich habe in der Bibliothek ein Buch ausgeliehen.
+864|Bein|我跑步跑得腿很疼。|Vom Joggen tun mir die Beine weh.
+865|andere Gegend, auswärts|他是从外地来的。|Er kommt von auswärts.
+866|Essen liefern lassen; Lieferessen|今天晚上我们点外卖吧。|Lass uns heute Abend Essen bestellen.
+867|Fremdsprache|你会说几门外语？|Wie viele Fremdsprachen sprichst du?
+868|fertigstellen, erledigen|我已经完成作业了。|Ich habe die Hausaufgaben schon fertig.
+869|Verspätung haben|飞机晚点了。|Das Flugzeug hat Verspätung.
+870|Abendveranstaltung, Feier|新年晚会很热闹。|Die Neujahrsfeier war sehr lebhaft.
+871|Schüssel; Zählwort|我吃了两碗米饭。|Ich habe zwei Schüsseln Reis gegessen.
+872|Tennis|她网球打得很好。|Sie spielt sehr gut Tennis.
+873|Website|这个网站很有用。|Diese Website ist sehr nützlich.
+874|vergessen|别忘记带钥匙。|Vergiss den Schlüssel nicht.
+875|Badezimmer, Toilette|卫生间在哪儿？|Wo ist das Badezimmer?
+876|für|我为你高兴。|Ich freue mich für dich.
+877|um zu, für|为了学好汉语，他每天练习。|Um gut Chinesisch zu lernen, übt er jeden Tag.
+878|Kultur|我喜欢中国文化。|Ich mag die chinesische Kultur.
+879|Zimmer, Raum|屋子里很暖和。|Im Zimmer ist es schön warm.
+880|Westen|太阳从西边下去。|Die Sonne geht im Westen unter.
+881|Nordwesten|中国的西北很大。|Der Nordwesten Chinas ist sehr groß.
+882|Westen; westlich|西方人和东方人的习惯不同。|Westliche und östliche Gewohnheiten sind verschieden.
+883|Wassermelone|夏天吃西瓜很舒服。|Im Sommer ist Wassermelone sehr erfrischend.
+884|Südwesten|成都在中国的西南。|Chengdu liegt im Südwesten Chinas.
+885|Gewohnheit; sich gewöhnen|我已经习惯了这里的生活。|Ich habe mich an das Leben hier gewöhnt.
+886|Waschmaschine|洗衣机坏了。|Die Waschmaschine ist kaputt.
+887|duschen, baden|我每天晚上洗澡。|Ich dusche jeden Abend.
+888|lieben, sehr mögen|这是我最喜爱的书。|Das ist mein Lieblingsbuch.
+889|Sommer|夏天很热。|Im Sommer ist es heiß.
+890|zuerst|你先走吧。|Geh du zuerst.
+891|glauben, vertrauen|我相信你。|Ich glaube dir.
+892|Banane|我买了一些香蕉。|Ich habe ein paar Bananen gekauft.
+893|Kiste, Koffer|这个箱子太重了。|Dieser Koffer ist zu schwer.
+894|nach, in Richtung; gegenüber|向左走。|Nach links gehen.
+895|Kamera|我买了一个新相机。|Ich habe eine neue Kamera gekauft.
+896|ähneln, aussehen wie; wie|她很像她妈妈。|Sie sieht ihrer Mutter sehr ähnlich.
+897|Wohnanlage|我们小区很安静。|Unsere Wohnanlage ist sehr ruhig.
+898|vorsichtig; aufpassen|小心！|Vorsicht!
+899|Schulgelände, Campus|我们的校园很漂亮。|Unser Campus ist sehr schön.
+900|Schulleiter(in)|校长在开会。|Die Schulleiterin ist in einer Sitzung.
+901|Schuh|这双鞋多少钱？|Wie viel kostet dieses Paar Schuhe?
+902|im Herzen, innerlich|我心里很高兴。|Innerlich freue ich mich sehr.
+903|Neujahr|新年快乐！|Frohes neues Jahr!
+904|Nachrichten|我每天看新闻。|Ich schaue jeden Tag Nachrichten.
+905|frisch|这些水果很新鲜。|Dieses Obst ist sehr frisch.
+906|Brief; glauben|我不信。|Das glaube ich nicht.
+907|Kreditkarte|可以用信用卡吗？|Kann man mit Kreditkarte zahlen?
+908|okay sein, gehen; fähig|——明天见，行吗？——行！|„Treffen wir uns morgen, okay?“ – „Okay!“
+909|Gepäck|你的行李太多了。|Du hast zu viel Gepäck.
+910|Interesse|你对什么有兴趣？|Wofür interessierst du dich?
+911|Urlaub machen|我下个月休假。|Ich habe nächsten Monat Urlaub.
+912|brauchen; Bedarf|你需要帮助吗？|Brauchst du Hilfe?
+913|wählen, auswählen|你选哪一个？|Welches wählst du?
+914|wählen; Wahl|这是我自己的选择。|Das ist meine eigene Wahl.
+915|Semester, Schulhalbjahr|这个学期我很忙。|Dieses Halbjahr bin ich sehr beschäftigt.
+916|Zahn|我牙疼。|Ich habe Zahnschmerzen.
+917|Zahnbürste|我忘了带牙刷。|Ich habe meine Zahnbürste vergessen.
+918|Schaf, Ziege|山上有很多羊。|Auf dem Berg gibt es viele Schafe.
+919|halten (Tiere), aufziehen|我家养了一只猫。|Wir haben eine Katze.
+920|fordern; Anforderung|老师要求我们每天读书。|Der Lehrer verlangt, dass wir jeden Tag lesen.
+921|Seite (Buch)|请打开书，看第十页。|Öffnet das Buch auf Seite zehn.
+922|gewöhnlich, normal; mittelmäßig|我一般十一点睡觉。|Normalerweise gehe ich um elf schlafen.
+923|gleichzeitig (… während …)|他一边吃饭一边看手机。|Er isst und schaut dabei aufs Handy.
+924|bestimmt, unbedingt|我一定会来的。|Ich komme ganz bestimmt.
+925|insgesamt|一共多少钱？|Wie viel macht das insgesamt?
+926|zusammen; am selben Ort|我们一块儿去吧。|Lass uns zusammen gehen.
+927|gleich, genauso|我们俩一样高。|Wir beide sind gleich groß.
+928|immer, ununterbrochen; geradeaus|一直往前走。|Immer geradeaus gehen.
+929|nach, später, in Zukunft|以后我想当医生。|Später möchte ich Ärztin werden.
+930|vor, früher|以前我住在北京。|Früher habe ich in Peking gewohnt.
+931|über, mehr als; oben genannt|六十分以上就及格了。|Ab sechzig Punkten hat man bestanden.
+932|außer, außerhalb|除了汉语以外，我还学英语。|Außer Chinesisch lerne ich auch Englisch.
+933|(fälschlich) annehmen|我以为你不来了。|Ich dachte, du kommst nicht mehr.
+934|unter, weniger als; folgend|十岁以下的孩子不用买票。|Kinder unter zehn brauchen kein Ticket.
+935|Musik|我喜欢听中国音乐。|Ich höre gern chinesische Musik.
+936|Bank|我去银行取钱。|Ich gehe zur Bank Geld abheben.
+937|Bankkarte|我的银行卡丢了。|Meine Bankkarte ist weg.
+938|Getränk|你想喝什么饮料？|Welches Getränk möchtest du?
+939|sollen, sollte|你应该多休息。|Du solltest dich mehr ausruhen.
+940|beeinflussen; Einfluss|玩手机会影响学习。|Handyspielen beeinträchtigt das Lernen.
+941|benutzen, verwenden|你会用筷子吗？|Kannst du Stäbchen benutzen?
+942|E-Mail, Post(sendung)|我给你发了一封邮件。|Ich habe dir eine E-Mail geschickt.
+943|E-Mail-Postfach; Briefkasten|你的邮箱地址是什么？|Wie ist deine E-Mail-Adresse?
+944|Tourist(in)|这里的游客很多。|Hier gibt es viele Touristen.
+945|Spiel|孩子们在玩游戏。|Die Kinder spielen ein Spiel.
+946|betreffen; in Bezug auf|这件事和他有关。|Diese Sache hat mit ihm zu tun.
+947|berühmt|这家饭馆很有名。|Dieses Restaurant ist sehr bekannt.
+948|nützlich|这本书很有用。|Dieses Buch ist sehr nützlich.
+949|wieder, schon wieder|他又迟到了。|Er ist schon wieder zu spät.
+950|Badminton|我们去打羽毛球吧。|Lass uns Badminton spielen.
+951|Regenmantel|下雨了，穿上雨衣吧。|Es regnet, zieh den Regenmantel an.
+952|Sprache|你会说几种语言？|Wie viele Sprachen sprichst du?
+953|begegnen, stoßen auf|我遇到了一个问题。|Ich bin auf ein Problem gestoßen.
+954|(zufällig) treffen|我在路上遇见了老师。|Ich habe unterwegs zufällig meinen Lehrer getroffen.
+955|Garten, Park|我们去动物园吧。|Lass uns in den Zoo gehen.
+956|Suffix: Person mit Funktion (‑mitglied, ‑er)|他是一名运动员。|Er ist Sportler.
+957|bereit sein, gern wollen|你愿意帮我吗？|Bist du bereit, mir zu helfen?
+958|Mond|今天的月亮很圆。|Der Mond ist heute sehr rund.
+959|je … desto …|雨越下越大。|Der Regen wird immer stärker.
+960|Sportfest|学校下个月开运动会。|Nächsten Monat hat die Schule Sportfest.
+961|Sportler(in), Athlet(in)|他是一名足球运动员。|Er ist Fußballspieler.
+962|wir (inkl. Angesprochenem)|咱们一起走吧。|Lass uns zusammen gehen.
+963|schmutzig|你的衣服脏了。|Deine Kleidung ist schmutzig.
+964|was tun?|我的钥匙丢了，怎么办？|Mein Schlüssel ist weg, was soll ich tun?
+965|wie, auf welche Weise|这个问题怎样解决？|Wie löst man dieses Problem?
+966|stehen|别站着，坐吧。|Steh nicht rum, setz dich.
+967|öffnen (Mund); Zählwort für flache Dinge|请给我一张纸。|Gib mir bitte ein Blatt Papier.
+968|wachsen; Leiter (Suffix)|你长高了！|Du bist gewachsen!
+969|beunruhigt, in Eile|别着急，还有时间。|Keine Eile, wir haben noch Zeit.
+970|scheinen, beleuchten; fotografieren; (Spiegel) sehen|她照了照镜子。|Sie schaute kurz in den Spiegel.
+971|sich kümmern um, pflegen|她在家照顾奶奶。|Sie pflegt zu Hause ihre Oma.
+972|Foto|这是我们家的照片。|Das ist ein Foto unserer Familie.
+973|fotografieren|我们在这儿照相吧。|Lass uns hier ein Foto machen.
+974|bis (zu)|我直到十二点才睡觉。|Ich bin erst um zwölf schlafen gegangen.
+975|nur|我只有一个哥哥。|Ich habe nur einen älteren Bruder.
+976|nur können, nicht anders können|我只能明天去。|Ich kann nur morgen hin.
+977|nur, lediglich; nur dass|我只是想帮你。|Ich wollte dir nur helfen.
+978|solange, wenn nur|只要努力，就能学好。|Solange man sich anstrengt, lernt man es gut.
+979|nur wenn|只有多练习，才能说得好。|Nur wer viel übt, kann gut sprechen.
+980|Papier|请给我一张纸。|Gib mir bitte ein Blatt Papier.
+981|Mitte; in, unter|在学生中，他最高。|Unter den Schülern ist er der größte.
+982|Mitte, zwischen|我坐在他们中间。|Ich sitze zwischen ihnen.
+983|endlich|考试终于结束了！|Die Prüfung ist endlich vorbei!
+984|Art, Sorte|这种水果我没吃过。|Diese Sorte Obst habe ich noch nie gegessen.
+985|wichtig|健康最重要。|Gesundheit ist das Wichtigste.
+986|Wochenende|周末你做什么？|Was machst du am Wochenende?
+987|hauptsächlich, wichtigste(r)|我主要学习汉语和英语。|Ich lerne hauptsächlich Chinesisch und Englisch.
+988|im Krankenhaus liegen|爷爷住院了。|Opa liegt im Krankenhaus.
+989|aufpassen, beachten|过马路要注意安全。|Beim Überqueren der Straße auf die Sicherheit achten.
+990|Nomensuffix (z. B. 桌子)|这把椅子很舒服。|Dieser Stuhl ist sehr bequem.
+991|Fahrrad|我每天骑自行车上学。|Ich fahre jeden Tag mit dem Rad zur Schule.
+992|Zeichenlexikon, Wörterbuch|你可以用字典查这个字。|Du kannst das Zeichen im Wörterbuch nachschlagen.
+993|immer; insgesamt|他总说他很忙。|Er sagt immer, dass er beschäftigt ist.
+994|immer|她总是很开心。|Sie ist immer fröhlich.
+995|Mund|张开嘴。|Mund auf.
+996|am besten|你最好早点儿去。|Am besten gehst du früh hin.
+997|zuletzt; letzte(r)|他最后一个到。|Er kam als Letzter an.
+998|in letzter Zeit|你最近怎么样？|Wie geht es dir in letzter Zeit?
+999|Hausaufgabe|你做完作业了吗？|Hast du deine Hausaufgaben fertig?
+1000|zu Gast sein|周末我去朋友家做客。|Am Wochenende bin ich bei Freunden zu Gast.

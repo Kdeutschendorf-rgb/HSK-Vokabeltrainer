@@ -1,0 +1,200 @@
+301|Partikel am Satzende (Ausruf, Nachdruck)|今天好冷啊！|Heute ist es aber kalt!
+302|Hobby; gern machen|你有什么爱好？|Was hast du für Hobbys?
+303|weiß (Farbe)|我喜欢白色的衣服。|Ich mag weiße Kleidung.
+304|Klasse, Kurs; Schicht|我们班有三十个学生。|In unserer Klasse sind dreißig Schüler.
+305|helfen|你能帮我吗？|Kannst du mir helfen?
+306|helfen, aushelfen|谢谢你帮忙！|Danke für deine Hilfe!
+307|Tasche; einwickeln; Zählwort für Packungen|我的包在哪儿？|Wo ist meine Tasche?
+308|Heft, Notizbuch|请把它写在本子上。|Schreib es bitte ins Heft.
+309|vergleichen; als (Vergleich)|我比我弟弟高。|Ich bin größer als mein kleiner Bruder.
+310|Stift|我可以用一下你的笔吗？|Kann ich kurz deinen Stift benutzen?
+311|nicht (Verbot), lass das|别说话了！|Hör auf zu reden!
+312|nicht schlecht, gut|你的汉语很不错。|Dein Chinesisch ist ziemlich gut.
+313|Entschuldigung, peinlich|不好意思，我来晚了。|Sorry, ich bin zu spät.
+314|lang|这条路很长。|Diese Straße ist sehr lang.
+315|Haltestelle, Bahnhof|车站离这儿不远。|Die Haltestelle ist nicht weit von hier.
+316|hinausgehen; erscheinen|他出门了。|Er ist aus dem Haus gegangen.
+317|ins Ausland gehen|她明年要出国学习。|Sie will nächstes Jahr zum Studium ins Ausland.
+318|herauskommen|你快出来吧！|Komm schnell raus!
+319|aus dem Haus gehen|我早上七点出门。|Ich gehe morgens um sieben aus dem Haus.
+320|hinausgehen|我们出去走走吧。|Lass uns rausgehen und spazieren.
+321|Bett|我的床很舒服。|Mein Bett ist sehr bequem.
+322|Wort, Vokabel|这个词是什么意思？|Was bedeutet dieses Wort?
+323|Mal (Zählwort für Häufigkeit)|我去过两次中国。|Ich war zweimal in China.
+324|von, aus, seit|我从德国来。|Ich komme aus Deutschland.
+325|von klein auf|我从小就喜欢音乐。|Ich mag Musik schon von klein auf.
+326|falsch; Fehler|对不起，是我错了。|Entschuldigung, es war mein Fehler.
+327|schlagen; spielen (Ballspiel); (an)rufen|我们下午去打篮球吧。|Lass uns nachmittags Basketball spielen.
+328|ein Taxi nehmen|太晚了，我们打车回家吧。|Es ist zu spät, lass uns mit dem Taxi heimfahren.
+329|öffnen, aufmachen; einschalten|请打开书。|Öffnet bitte eure Bücher.
+330|aber|我想去，但没有时间。|Ich will hin, aber habe keine Zeit.
+331|aber, jedoch|这件衣服很好看，但是太贵了。|Das Kleidungsstück ist schön, aber zu teuer.
+332|Partikel vor dem Verb (adverbial: „-weise“)|他高兴地笑了。|Er lachte fröhlich.
+333|Partikel nach dem Verb (Ergänzung des Grads)|你说得很好。|Du sprichst sehr gut.
+334|warten|请等我一下。|Warte bitte kurz auf mich.
+335|U-Bahn|我每天坐地铁上学。|Ich fahre jeden Tag mit der U-Bahn zur Schule.
+336|bestellen (Essen); anklicken; nicken|我们点菜吧。|Lass uns bestellen.
+337|verstehen|你懂我的意思吗？|Verstehst du, was ich meine?
+338|sich bewegen; anfassen|别动！|Nicht bewegen!
+339|Restaurant|这个饭馆的饺子很好吃。|Die Jiaozi in diesem Restaurant sind sehr gut.
+340|fliegen|鸟在天上飞。|Vögel fliegen am Himmel.
+341|hoch; groß (Körper)|我哥哥很高。|Mein großer Bruder ist sehr groß.
+342|Oberstufe, gymnasiale Oberschule|我在上高中。|Ich gehe in die Oberstufe.
+343|erzählen, mitteilen|请告诉我你的电话号码。|Sag mir bitte deine Telefonnummer.
+344|Körpergröße|他个子很高。|Er ist sehr groß gewachsen.
+345|mit; folgen|我跟朋友一起去。|Ich gehe mit Freunden zusammen hin.
+346|Bus|我坐公交车去学校。|Ich fahre mit dem Bus zur Schule.
+347|überqueren, vorbeigehen; (Zeit) vergehen; feiern|过马路要小心。|Pass beim Überqueren der Straße auf.
+348|herüberkommen|你过来一下。|Komm mal kurz her.
+349|Neujahr (Frühlingsfest) feiern|过年的时候我们吃饺子。|Zum Neujahrsfest essen wir Jiaozi.
+350|hinübergehen; vorbeigehen|我们过去看看吧。|Lass uns rübergehen und schauen.
+351|Partikel: Erfahrung („schon einmal“)|你去过中国吗？|Warst du schon einmal in China?
+352|oder (in Fragen); immer noch; lieber doch|你喝茶还是咖啡？|Trinkst du Tee oder Kaffee?
+353|schwarz (Farbe)|他穿着黑色的裤子。|Er trägt eine schwarze Hose.
+354|Schwarztee|我喜欢喝红茶。|Ich trinke gern Schwarztee.
+355|rot (Farbe)|她喜欢红色。|Sie mag Rot.
+356|hinten, dahinter|学校后面有一个公园。|Hinter der Schule ist ein Park.
+357|ausgeben (Geld, Zeit)|我花了很多钱。|Ich habe viel Geld ausgegeben.
+358|Blume; bunt|这些花真漂亮！|Diese Blumen sind wirklich schön!
+359|malen, zeichnen; Bild|她画画儿画得很好。|Sie malt sehr gut.
+360|schlecht; kaputt|我的手机坏了。|Mein Handy ist kaputt.
+361|zurückkommen|你什么时候回来？|Wann kommst du zurück?
+362|zurückgehen|太晚了，我要回去了。|Es ist spät, ich muss zurück.
+363|Flughafen|我去机场接朋友。|Ich hole einen Freund am Flughafen ab.
+364|Flugticket|我买了去北京的机票。|Ich habe ein Flugticket nach Peking gekauft.
+365|sich erinnern|你还记得我吗？|Erinnerst du dich noch an mich?
+366|Zählwort für Räume|我家有三间房间。|Unsere Wohnung hat drei Zimmer.
+367|unterrichten, beibringen|她教我们汉语。|Sie unterrichtet uns in Chinesisch.
+368|Klassenzimmer|学生们都在教室里。|Die Schüler sind alle im Klassenzimmer.
+369|vorstellen; Vorstellung|我来介绍一下，这是我朋友。|Darf ich vorstellen: Das ist mein Freund.
+370|eintreten, hineingehen|请进！|Herein!
+371|hereinkommen|外面冷，快进来吧。|Draußen ist es kalt, komm schnell rein.
+372|hineingehen|你先进去吧。|Geh du schon mal hinein.
+373|nah|我家离学校很近。|Ich wohne nah an der Schule.
+374|oft, häufig|我经常去图书馆。|Ich gehe oft in die Bibliothek.
+375|Hotel|我们住在这家酒店。|Wir wohnen in diesem Hotel.
+376|gleich, sofort; genau, eben; schon|我马上就来。|Ich komme sofort.
+377|Kaffee|你要咖啡还是茶？|Möchtest du Kaffee oder Tee?
+378|anfangen, beginnen; Anfang|电影开始了。|Der Film hat angefangen.
+379|das Schuljahr/Semester beginnt|下个星期开学。|Nächste Woche beginnt die Schule wieder.
+380|prüfen; eine Prüfung machen|你考得怎么样？|Wie lief deine Prüfung?
+381|Prüfung; prüfen|明天有汉语考试。|Morgen ist die Chinesischprüfung.
+382|möglich; vielleicht; Möglichkeit|他可能不来了。|Er kommt vielleicht nicht mehr.
+383|Hose|这条裤子太长了。|Diese Hose ist zu lang.
+384|schnell; bald|快走吧！|Schnell, lass uns gehen!
+385|glücklich, fröhlich|生日快乐！|Alles Gute zum Geburtstag!
+386|bald, gleich|快要下雨了。|Es fängt gleich an zu regnen.
+387|Basketball|他每天打篮球。|Er spielt jeden Tag Basketball.
+388|müde; ermüden|我今天很累。|Ich bin heute sehr müde.
+389|entfernt von (Entfernung)|我家离学校不远。|Ich wohne nicht weit von der Schule.
+390|drinnen, innen|房间里面有人吗？|Ist jemand im Zimmer?
+391|Gebäude; Stockwerk|我住在三楼。|Ich wohne im dritten Stock.
+392|Straße, Weg|这条路怎么走？|Wie komme ich auf dieser Straße weiter?
+393|unterwegs|路上小心！|Pass unterwegs auf dich auf!
+394|reisen; Tourismus|我想去中国旅游。|Ich möchte in China reisen.
+395|grüner Tee|绿茶对身体好。|Grüner Tee ist gut für den Körper.
+396|grün (Farbe)|我喜欢绿色。|Ich mag Grün.
+397|langsam|请说得慢一点儿。|Sprich bitte etwas langsamer.
+398|langweilig|这个电影没意思。|Dieser Film ist langweilig.
+399|jede(r/s)|我每天学习汉语。|Ich lerne jeden Tag Chinesisch.
+400|Tür, Tor|请关门。|Bitte schließ die Tür.
+401|Eingang, vor der Tür|我在学校门口等你。|Ich warte am Schuleingang auf dich.
+402|Eintrittskarte|门票多少钱？|Wie viel kostet der Eintritt?
+403|Seite (Richtungssuffix, z. B. 前面)|书在桌子上面。|Das Buch liegt auf dem Tisch.
+404|Name; Platz (Rang), Zählwort für Personen|他考了第一名。|Er ist in der Prüfung Erster geworden.
+405|nehmen, holen, tragen|请帮我拿一下。|Halt das bitte kurz für mich.
+406|so; also, dann|你那么喜欢，就买吧。|Wenn es dir so gefällt, dann kauf es.
+407|so, auf diese Art (dort)|你别那样做。|Mach das nicht so.
+408|Milchtee|我想喝一杯奶茶。|Ich möchte einen Milchtee.
+409|Oma (väterlicherseits)|我奶奶七十岁了。|Meine Oma ist siebzig.
+410|Junge|那个男孩儿是我弟弟。|Der Junge dort ist mein kleiner Bruder.
+411|Vogel|树上有很多鸟。|Auf dem Baum sind viele Vögel.
+412|Mädchen|这个女孩儿很聪明。|Dieses Mädchen ist sehr klug.
+413|neben, daneben|我家旁边有一个超市。|Neben meinem Haus ist ein Supermarkt.
+414|laufen, rennen|别跑！|Lauf nicht weg!
+415|joggen|我每天早上跑步。|Ich jogge jeden Morgen.
+416|Ticket, Fahrkarte|我买了两张电影票。|Ich habe zwei Kinokarten gekauft.
+417|Ehefrau|他的妻子是老师。|Seine Frau ist Lehrerin.
+418|aufstehen; (Ergänzung: anfangen, hoch-)|快起来！|Steh schnell auf!
+419|vorne, davor|前面有一家饭馆。|Vorne ist ein Restaurant.
+420|sonnig, heiter|今天天气晴。|Heute ist es sonnig.
+421|Ball|我们去踢球吧。|Lass uns Fußball spielen.
+422|lassen; veranlassen|妈妈让我早点儿回家。|Mama lässt mich früh nach Hause kommen.
+423|Fleisch|我不吃肉。|Ich esse kein Fleisch.
+424|Einkaufszentrum|周末商场人很多。|Am Wochenende ist das Einkaufszentrum voll.
+425|heraufkommen|你上来吧，我在三楼。|Komm hoch, ich bin im dritten Stock.
+426|oben, darauf|桌子上面有一杯水。|Auf dem Tisch steht ein Glas Wasser.
+427|hinaufgehen|我们上去看看吧。|Lass uns hochgehen und nachsehen.
+428|ins Internet gehen, surfen|我晚上经常上网。|Abends bin ich oft im Internet.
+429|Körper; Gesundheit|你身体好吗？|Geht es dir gesundheitlich gut?
+430|Geburtstag|今天是我的生日。|Heute ist mein Geburtstag.
+431|Zeit; Stunde; als, wenn|上课时不要说话。|Während des Unterrichts nicht reden.
+432|Angelegenheit, Sache|我有一件事情要告诉你。|Ich muss dir etwas erzählen.
+433|Hand|吃饭前要洗手。|Vor dem Essen Hände waschen.
+434|Armbanduhr|这块手表是我爸爸送的。|Diese Uhr hat mir mein Vater geschenkt.
+435|Schultasche|我的书包很重。|Meine Schultasche ist schwer.
+436|bequem; sich wohl fühlen|我今天不太舒服。|Ich fühle mich heute nicht so gut.
+437|schenken; bringen, begleiten|我送你一本书。|Ich schenke dir ein Buch.
+438|obwohl|虽然很累，但是我很高兴。|Obwohl ich müde bin, bin ich froh.
+439|deshalb, also|我生病了，所以没去上课。|Ich war krank, deshalb war ich nicht im Unterricht.
+440|schmerzen, weh tun|我头疼。|Ich habe Kopfschmerzen.
+441|treten, kicken|他们在踢足球。|Sie spielen Fußball.
+442|Aufgabe, Frage (Prüfung)|这道题太难了。|Diese Aufgabe ist zu schwer.
+443|Zählwort für lange, schmale Dinge|我买了一条裤子。|Ich habe eine Hose gekauft.
+444|tanzen|她喜欢跳舞。|Sie tanzt gern.
+445|Kopf; Anfang; Zählwort für Rinder|我头很疼。|Mein Kopf tut sehr weh.
+446|Ausland|他去过很多外国。|Er war schon in vielen Ländern.
+447|draußen, außen|外面下雨了。|Draußen regnet es.
+448|fertig sein, beenden|我吃完了。|Ich bin fertig mit Essen.
+449|zehntausend|这个城市有一百万人。|Diese Stadt hat eine Million Einwohner.
+450|im Internet, online|我在网上买了一本书。|Ich habe ein Buch online gekauft.
+451|in Richtung, nach|一直往前走。|Immer geradeaus gehen.
+452|vergessen|我忘了他的名字。|Ich habe seinen Namen vergessen.
+453|warum?|你为什么不来？|Warum kommst du nicht?
+454|Zählwort für Personen (höflich)|这位是我的老师。|Das ist meine Lehrerin.
+455|hoffen; Hoffnung|希望你明天能来。|Ich hoffe, du kannst morgen kommen.
+456|waschen|我去洗衣服。|Ich wasche Wäsche.
+457|Toilette|请问，洗手间在哪儿？|Entschuldigung, wo ist die Toilette?
+458|herunterkommen; (Ergänzung: fest-, ab-)|你快下来吧。|Komm schnell runter.
+459|unten, darunter; als Nächstes|下面我们看第二题。|Als Nächstes schauen wir uns Aufgabe zwei an.
+460|hinuntergehen; weiter (machen)|你说下去。|Sprich weiter.
+461|Kind|那个小孩儿很可爱。|Das Kind dort ist sehr süß.
+462|in der Kindheit, als Kind|小时候我住在北京。|Als Kind habe ich in Peking gewohnt.
+463|lachen, lächeln|她笑得很开心。|Sie lacht sehr fröhlich.
+464|Familienname; mit Nachnamen heißen|您贵姓？——我姓王。|„Wie ist Ihr Name?“ – „Mein Nachname ist Wang.“
+465|vollständiger Name|请写下你的姓名。|Schreib bitte deinen vollständigen Namen auf.
+466|Farbe|你喜欢什么颜色？|Welche Farbe magst du?
+467|Auge|她的眼睛很大。|Sie hat große Augen.
+468|Medikament|你吃药了吗？|Hast du deine Medizin genommen?
+469|Apotheke|药店在医院旁边。|Die Apotheke ist neben dem Krankenhaus.
+470|Opa (väterlicherseits)|我爷爷很喜欢喝茶。|Mein Opa trinkt sehr gern Tee.
+471|einen Moment, gleich|请等一会儿。|Warte bitte einen Moment.
+472|zusammen|我们一起去吧。|Lass uns zusammen gehen.
+473|bereits, schon|我已经吃饭了。|Ich habe schon gegessen.
+474|Bedeutung, Sinn|这个词是什么意思？|Was bedeutet dieses Wort?
+475|weil|因为下雨，所以我没去。|Weil es regnete, bin ich nicht hingegangen.
+476|bewölkt, trüb|今天是阴天。|Heute ist es bewölkt.
+477|schwimmen|他游得很快。|Er schwimmt sehr schnell.
+478|schwimmen|我夏天经常去游泳。|Im Sommer gehe ich oft schwimmen.
+479|manchmal|我有时去图书馆学习。|Manchmal lerne ich in der Bibliothek.
+480|interessant|这本书很有意思。|Dieses Buch ist sehr interessant.
+481|rechts|在前面往右走。|Vorne nach rechts gehen.
+482|rechte Seite, rechts|书店在超市右边。|Die Buchhandlung ist rechts vom Supermarkt.
+483|Fisch|我喜欢吃鱼。|Ich esse gern Fisch.
+484|weit, fern|你家离这儿远吗？|Wohnst du weit von hier?
+485|Sport treiben; Sport, Bewegung|你喜欢什么运动？|Welchen Sport magst du?
+486|Haltestelle, Station|下一站是哪儿？|Was ist die nächste Haltestelle?
+487|Ehemann|她丈夫是医生。|Ihr Mann ist Arzt.
+488|so (hier, in diesem Maß)|你怎么这么高兴？|Warum bist du so fröhlich?
+489|so, auf diese Weise|这个字应该这样写。|Dieses Zeichen schreibt man so.
+490|Partikel: andauernder Zustand (‑end)|他笑着说：“你好！”|Er sagte lächelnd: „Hallo!“
+491|gerade (dabei); genau|我正要给你打电话。|Ich wollte dich gerade anrufen.
+492|Woche|下周我们有考试。|Nächste Woche haben wir eine Prüfung.
+493|vorbereiten; vorhaben|你准备好了吗？|Bist du bereit?
+494|selbst, sich|这是我自己做的。|Das habe ich selbst gemacht.
+495|gehen, laufen; weggehen|我们走吧。|Lass uns gehen.
+496|zu Fuß gehen|我每天走路上学。|Ich gehe jeden Tag zu Fuß zur Schule.
+497|Fußball|我喜欢踢足球。|Ich spiele gern Fußball.
+498|am meisten, am …sten|我最喜欢吃饺子。|Am liebsten esse ich Jiaozi.
+499|links|在路口往左走。|An der Kreuzung nach links gehen.
+500|linke Seite, links|我左边是我的同学。|Links von mir sitzt mein Mitschüler.

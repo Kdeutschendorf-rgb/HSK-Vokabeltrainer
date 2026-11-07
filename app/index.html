@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="theme-color" content="#c2362b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="汉字">
+<title>HSK Vokabeltrainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: eine schmale Lernspalte; oben Kopf mit Reitern, darunter Heute / Lernen / Wörter / Einstellungen */
+  --bg:#eef1f4; --surface:#ffffff; --ink:#18202a; --muted:#5d6876; --line:#d6dce3;
+  --accent:#c2362b; --accent-ink:#ffffff; --soft:#f6e3e1;
+  --good:#2f7d4f; --warn:#b7791f; --bad:#b83a3a;
+  --t1:#d1453b; --t2:#d98a18; --t3:#2d8a4e; --t4:#2f62c7; --t5:#7a8491;
+  --han:"Noto Serif SC","Songti SC","STSong","PingFang SC",serif;
+  --body:"Source Sans 3","Helvetica Neue",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12161b; --surface:#1b2128; --ink:#e7ebef; --muted:#9aa5b1; --line:#2c343e;
+  --accent:#e2574b; --accent-ink:#ffffff; --soft:#3a2321;
+  --good:#5cb57f; --warn:#e0a84a; --bad:#e26b6b;
+  --t1:#f0665c; --t2:#f0a53c; --t3:#4fbf74; --t4:#6b95f0; --t5:#8f99a6;
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#12161b; --surface:#1b2128; --ink:#e7ebef; --muted:#9aa5b1; --line:#2c343e;
+  --accent:#e2574b; --accent-ink:#ffffff; --soft:#3a2321;
+  --good:#5cb57f; --warn:#e0a84a; --bad:#e26b6b;
+  --t1:#f0665c; --t2:#f0a53c; --t3:#4fbf74; --t4:#6b95f0; --t5:#8f99a6;
+  color-scheme:dark;}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.45;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:640px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:16px;min-height:100%}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.seal{width:34px;height:34px;border-radius:6px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--han);font-size:20px}
+nav{display:flex;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:3px}
+nav button{border:0;background:none;padding:6px 12px;border-radius:7px;font-weight:600;color:var(--muted);font-size:15px}
+nav button[aria-current="true"]{background:var(--ink);color:var(--bg)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+h1,h2{margin:0;text-wrap:balance}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tile{display:flex;flex-direction:column;gap:2px}
+.tile b{font-size:30px;font-variant-numeric:tabular-nums;line-height:1.1}
+.tile span{color:var(--muted);font-size:14px}
+.primary{background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:14px 18px;font-weight:700;font-size:18px;width:100%}
+.primary:disabled{opacity:.45;cursor:default}
+.ghost{background:none;border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-weight:600}
+.levels{display:flex;flex-direction:column;gap:12px}
+.lvl{display:grid;grid-template-columns:92px 1fr auto;gap:10px;align-items:center}
+.lvl .name{font-weight:700}
+.lvl .num{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px;min-width:80px;text-align:right}
+.bar{height:12px;border-radius:6px;background:var(--line);display:flex;overflow:hidden}
+.bar i{display:block;height:100%}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.c-sure{background:var(--good)} .c-rev{background:var(--t4)} .c-learn{background:var(--warn)}
+.note{color:var(--muted);font-size:15px;margin:0}
+/* Lernen */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px 18px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;min-height:330px}
+.meta{display:flex;justify-content:space-between;width:100%;font-size:13px;color:var(--muted)}
+.chip{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.03em;border:1px solid var(--line)}
+.chip.new{background:var(--soft);color:var(--accent);border-color:transparent}
+.han{font-family:var(--han);font-size:clamp(64px,18vw,104px);font-weight:500;line-height:1.1;word-break:keep-all}
+.py{font-size:26px;font-weight:600;letter-spacing:.02em}
+.de{font-size:21px;font-weight:600;max-width:34ch}
+.pos{font-size:13px;color:var(--muted)}
+.ex{border-top:1px solid var(--line);padding-top:12px;width:100%;display:flex;flex-direction:column;gap:3px}
+.ex .zh{font-family:var(--han);font-size:22px}
+.ex .exp{color:var(--muted);font-size:15px}
+.ex .exde{font-size:16px}
+.say{border:1px solid var(--line);background:none;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:600;color:var(--muted)}
+.row{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap}
+.answers{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.answers button{border:0;border-radius:12px;padding:10px 4px;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:2px;color:#fff;font-size:15px}
+.answers small{font-weight:600;opacity:.9;font-size:12px}
+.a-again{background:var(--bad)} .a-hard{background:var(--warn)} .a-good{background:var(--good)} .a-easy{background:var(--t4)}
+.kbd{font-size:12px;color:var(--muted);text-align:center}
+.tone1{color:var(--t1)}.tone2{color:var(--t2)}.tone3{color:var(--t3)}.tone4{color:var(--t4)}.tone5{color:var(--t5)}
+.progress{height:4px;background:var(--line);border-radius:2px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent)}
+/* Liste */
+.tools{display:flex;gap:8px;flex-wrap:wrap}
+.tools input{flex:1 1 200px;min-width:0;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:9px 12px;font:inherit}
+.seg{display:flex;gap:4px;flex-wrap:wrap}
+.seg button{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 10px;font-weight:600;font-size:14px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.list{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.item{display:grid;grid-template-columns:minmax(64px,auto) 1fr auto;gap:12px;align-items:center;padding:10px 14px;border:0;border-bottom:1px solid var(--line);background:none;text-align:left;width:100%}
+.item:last-child{border-bottom:0}
+.item .h{font-family:var(--han);font-size:24px}
+.item .t{display:flex;flex-direction:column;min-width:0}
+.item .t span:first-child{font-weight:600}
+.item .t span:last-child{color:var(--muted);font-size:15px;overflow-wrap:anywhere}
+.st{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.st-new{color:var(--muted);border:1px solid var(--line)}
+.st-learn{background:var(--warn);color:#fff}.st-rev{background:var(--t4);color:#fff}.st-sure{background:var(--good);color:#fff}
+.form{display:flex;flex-direction:column;gap:16px}
+.field{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.field label{font-weight:600}
+.field small{display:block;color:var(--muted);font-weight:400;font-size:14px}
+select{font:inherit;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+input[type=checkbox]{width:22px;height:22px;accent-color:var(--accent)}
+.sync{font-size:13px;color:var(--muted);text-align:center}
+.dlg{position:fixed;inset:0;background:rgba(0,0,0,.45);display:grid;place-items:center;padding:16px;z-index:5}
+.dlg .card{max-width:520px;width:100%}
+.hidden{display:none !important}
+.auth{max-width:420px;margin:6vh auto 0;display:flex;flex-direction:column;gap:14px}
+.auth input,.form input[type=text],.form textarea{font:inherit;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:10px 12px;width:100%}
+.auth .row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.auth .msg{min-height:1.4em;color:var(--bad);font-size:15px;margin:0}
+.link{background:none;border:0;color:var(--muted);text-decoration:underline;padding:4px;font-size:15px}
+.acct{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+
+/* Lesen */
+.reader{display:flex;flex-direction:column;gap:14px}
+.rhead{display:flex;flex-direction:column;gap:4px}
+.rhead .zh{font-family:var(--han);font-size:28px;font-weight:700}
+.rtools{display:flex;gap:8px;flex-wrap:wrap}
+.sent{display:flex;flex-direction:column;gap:6px;padding:10px 0;border-bottom:1px solid var(--line)}
+.sent:last-child{border-bottom:0}
+.sline{font-family:var(--han);font-size:26px;line-height:2.1}
+.sline.nopy{line-height:1.7}
+.tok{border:0;background:none;padding:0 1px;font:inherit;border-radius:4px;color:inherit}
+.tok:hover{background:var(--soft)}
+.tok.neu{text-decoration:underline dotted var(--accent) 2px;text-underline-offset:6px}
+.tok.sel{background:var(--soft);outline:2px solid var(--accent)}
+.punc{font-family:var(--han);font-size:26px}
+ruby rt{font-family:var(--body);font-size:12px;color:var(--muted);font-weight:600}
+.sde{color:var(--muted);font-size:16px}
+.sbtn{display:flex;gap:6px}
+.pop{position:sticky;bottom:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:0 6px 24px rgba(0,0,0,.18);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.pop .h{font-family:var(--han);font-size:30px}
+.pop .t{display:flex;flex-direction:column;flex:1;min-width:150px}
+.older{display:flex;flex-direction:column;gap:6px}
+.older button{text-align:left}
+@media (max-width:420px){.answers{grid-template-columns:repeat(2,1fr)} nav button{padding:6px 9px}}
+@media (prefers-reduced-motion:no-preference){.card{transition:transform .12s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><div class="seal" aria-hidden="true">汉</div><span>HSK Vokabeltrainer</span></div>
+    <nav aria-label="Bereiche" id="nav">
+      <button data-view="home" aria-current="true">Heute</button>
+      <button data-view="learn">Lernen</button>
+      <button data-view="read">Lesen</button>
+      <button data-view="list">Wörter</button>
+      <button data-view="settings">Einstellungen</button>
+    </nav>
+  </header>
+
+  <main id="login" class="view hidden" style="flex-direction:column">
+    <section class="panel auth" id="authBox">
+      <h1 style="font-size:24px">Willkommen</h1>
+      <p class="note">Melde dich an, damit dein Lernstand auf allen Geräten gleich ist.</p>
+      <label for="aMail" class="hidden">E-Mail</label><input id="aMail" type="email" autocomplete="email" placeholder="E-Mail">
+      <label for="aPw" class="hidden">Passwort</label><input id="aPw" type="password" autocomplete="current-password" placeholder="Passwort (mind. 6 Zeichen)">
+      <div class="row2"><button class="primary" id="aIn" style="font-size:16px">Anmelden</button><button class="ghost" id="aUp">Konto erstellen</button></div>
+      <p class="msg" id="aMsg" role="status"></p>
+      <button class="link" id="aGuest">Ohne Konto lernen (nur auf diesem Gerät)</button>
+    </section>
+    <section class="panel auth hidden" id="nameBox">
+      <h1 style="font-size:24px">Wie heißt du?</h1>
+      <p class="note">Der Name steht über deinem Lernstand und in deinen Lesetexten.</p>
+      <label for="nName" class="hidden">Name</label><input id="nName" type="text" autocomplete="given-name" placeholder="Vorname">
+      <button class="primary" id="nOk">Weiter</button>
+    </section>
+  </main>
+
+  <main id="home" class="view hidden" style="flex-direction:column;gap:16px">
+    <section class="panel" style="display:flex;flex-direction:column;gap:16px">
+      <div class="tiles">
+        <div class="tile"><b id="tDue">0</b><span>fällige Wiederholungen</span></div>
+        <div class="tile"><b id="tNew">0</b><span>neue Wörter heute</span></div>
+        <div class="tile"><b id="tStreak">0</b><span>Tage in Folge</span></div>
+      </div>
+      <button class="primary" id="startBtn">Jetzt lernen</button>
+      <p class="note" id="homeNote"></p>
+    </section>
+    <section class="panel" style="display:flex;flex-direction:column;gap:14px">
+      <h2>Fortschritt nach HSK-Stufe</h2>
+      <div class="levels" id="levels"></div>
+      <div class="legend"><span><i class="c-sure"></i>sicher (≥ 21 Tage)</span><span><i class="c-rev"></i>in Wiederholung</span><span><i class="c-learn"></i>gerade gelernt</span></div>
+    </section>
+    <p class="note" id="srcNote">Wortliste: offizieller HSK-3.0-Lehrplan (Fassung 2025, gilt seit Juli 2026).</p>
+  </main>
+
+  <main id="learn" class="view hidden" style="flex-direction:column;gap:12px">
+    <div class="progress" aria-hidden="true"><i id="sessBar" style="width:0"></i></div>
+    <div id="cardBox"></div>
+    <div id="answerBox"></div>
+  </main>
+
+  <main id="read" class="view hidden" style="flex-direction:column;gap:12px">
+    <div id="readBox" class="reader"></div>
+  </main>
+
+  <main id="list" class="view hidden" style="flex-direction:column;gap:12px">
+    <div class="tools">
+      <input id="q" type="search" placeholder="Suchen: 汉字, Pinyin oder Deutsch" aria-label="Wörter suchen">
+    </div>
+    <div class="seg" id="lvlSeg"></div>
+    <div class="seg" id="stSeg"></div>
+    <p class="note" id="listCount"></p>
+    <div class="list" id="wordList"></div>
+  </main>
+
+  <main id="settings" class="view hidden" style="flex-direction:column;gap:12px">
+    <section class="panel form">
+      <div class="acct"><span id="acctInfo"></span><button class="ghost" id="sOut">Abmelden</button></div>
+      <div class="field"><label for="sName">Dein Name</label><input type="text" id="sName" style="max-width:220px"></div>
+      <div class="field"><label for="sU">Wörter aus Keanus Einzelunterricht<small>kommen dann vor den HSK-Wörtern dran</small></label><input type="checkbox" id="sU"></div>
+    </section>
+    <section class="panel form">
+      <div class="field"><label for="sNew">Neue Wörter pro Tag<small>Empfehlung: 15 am Anfang, später 10</small></label>
+        <select id="sNew"><option>5</option><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option></select></div>
+      <div class="field"><label for="sAuto">Aussprache automatisch abspielen<small>beim Aufdecken der Karte</small></label><input type="checkbox" id="sAuto"></div>
+      <div class="field"><label for="sRate">Sprechtempo</label>
+        <select id="sRate"><option value="0.6">langsam</option><option value="0.8">mittel</option><option value="1">normal</option></select></div>
+      <div class="field"><label for="sTone">Zeichen nach Ton färben<small>1. Ton rot, 2. orange, 3. grün, 4. blau</small></label><input type="checkbox" id="sTone"></div>
+      <div class="field"><label for="sPyFront">Pinyin schon vorne zeigen<small>leichter, aber du übst die Zeichen weniger</small></label><input type="checkbox" id="sPyFront"></div>
+    </section>
+    <section class="panel form">
+      <label for="sImp">Lernstand aus dem alten Trainer übernehmen<small style="display:block;color:var(--muted);font-weight:400;font-size:14px">Im alten Trainer auf claude.ai unter Einstellungen „Lernstand kopieren“ tippen und hier einfügen.</small></label>
+      <textarea id="sImp" rows="3" placeholder="Hier einfügen …"></textarea>
+      <div class="row" style="justify-content:flex-start"><button class="ghost" id="sImpBtn">Übernehmen</button><span class="note" id="sImpMsg"></span></div>
+    </section>
+    <p class="note" id="voiceNote"></p>
+    <p class="sync" id="syncNote"></p>
+  </main>
+</div>
+
+<div class="dlg hidden" id="dlg" role="dialog" aria-modal="true" aria-label="Wort"><div class="card" id="dlgCard"></div></div>
+
+<script src="vendor/supabase.js"></script>
+<script>
+"use strict";
+const DAY = 864e5, CUTOFF_H = 4;  // neuer Lerntag beginnt um 4 Uhr
+const LEVELS = [1,2,3];
+const LNAME = l => l===0 ? "ohne HSK" : l===7 ? "HSK 7–9" : "HSK "+l;
+let WORDS = [], BYID = new Map();
+let S = { cards:{}, meta:{ settings:{newPerDay:15, auto:true, rate:0.8, tone:true, pyFront:false}, log:{} } };
+let ALLWORDS = [];
+const SB_URL="https://pgppnghqbuslucvfotaa.supabase.co", SB_KEY="sb_publishable_-WktLPprHHIvsZf8Xl1zUg_cGS8nMj-";
+const sb = window.supabase ? window.supabase.createClient(SB_URL, SB_KEY) : null;
+let user = null, dirty = false, pushTimer = null;
+/* ---------- Zeit ---------- */
+function dayStart(t=Date.now()){ const d=new Date(t - CUTOFF_H*36e5); d.setHours(0,0,0,0); return d.getTime() + CUTOFF_H*36e5; }
+function dayKey(t=Date.now()){ const d=new Date(t - CUTOFF_H*36e5); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+function todayLog(){ const k=dayKey(); return S.meta.log[k] || (S.meta.log[k]={n:0,r:0,x:0}); }
+
+/* ---------- Speicher: lokal im Browser + Supabase (Tabelle hsk_progress, eine Zeile pro Konto) ----------
+   S._u = letzte Änderung, S._s = Stand, der zuletzt mit Supabase übereinstimmte. */
+const lsKey=()=>"hsk:"+(user?user.id:"gast");
+function lsGet(){ try{ return JSON.parse(localStorage.getItem(lsKey())||"null"); }catch(e){ return null; } }
+function lsSet(){ try{ localStorage.setItem(lsKey(), JSON.stringify(S)); }catch(e){} }
+function blank(){ return { cards:{}, meta:{ settings:{newPerDay:15, auto:true, rate:0.8, tone:true, pyFront:false, unterricht:true, name:""}, log:{}, su:0 }, _u:0, _s:0 }; }
+function normalize(x){ const b=blank(); x=x||{}; return { cards:x.cards||{}, meta:{ settings:{...b.meta.settings, ...((x.meta||{}).settings||{})}, log:(x.meta||{}).log||{}, su:(x.meta||{}).su||0 }, _u:x._u||0, _s:x._s||0 }; }
+function mergeCards(remote){ for(const [id,c] of Object.entries(remote||{})){ const l=S.cards[id]; if(!l || (c.u||0)>(l.u||0)) S.cards[id]=c; } }
+function mergeState(r){ r=normalize(r);
+  mergeCards(r.cards);
+  for(const [dk,v] of Object.entries(r.meta.log)){ const l=S.meta.log[dk]; S.meta.log[dk]= !l?v:{n:Math.max(l.n||0,v.n||0), r:Math.max(l.r||0,v.r||0), x:Math.max(l.x||0,v.x||0)}; }
+  if(r.meta.su>(S.meta.su||0)){ S.meta.settings=r.meta.settings; S.meta.su=r.meta.su; }
+  S._s=r._u; S._u=Math.max(Date.now(), S._s+1);
+}
+function markDirty(){ S._u=Date.now(); dirty=true; lsSet(); clearTimeout(pushTimer); pushTimer=setTimeout(pushNow, 2000); }
+async function readRemote(){ if(!sb||!user||!navigator.onLine) return null;
+  const {data,error}=await sb.from("hsk_progress").select("data").eq("user_id",user.id).maybeSingle(); if(error) throw error; return data?data.data:null; }
+let pushing=null;
+function pushNow(){ clearTimeout(pushTimer); pushing=(pushing||Promise.resolve()).then(pushOnce,pushOnce); return pushing; }
+async function pushOnce(){
+  if(!sb||!user||!navigator.onLine||!dirty) return;
+  try{ const r=await readRemote(); if(r && (r._u||0)>(S._s||0)){ mergeState(r); lsSet(); render(); } }
+  catch(e){ setSync("Speichern gerade nicht möglich. Der Stand bleibt auf diesem Gerät und wird später nachgeholt."); return; }
+  const stamp=S._u; S.meta.log=trimLog(S.meta.log);
+  const {error}=await sb.from("hsk_progress").upsert({user_id:user.id, data:{...S,_s:stamp}, updated_at:new Date(stamp).toISOString()});
+  if(error){ setSync("Speichern gerade nicht möglich. Der Stand bleibt auf diesem Gerät und wird später nachgeholt."); console.warn(error); return; }
+  S._s=stamp; lsSet(); if(S._u===stamp) dirty=false;
+  setSync("Gespeichert · auf allen Geräten gleich");
+  const st=await sb.from("hsk_stats").upsert({user_id:user.id, name:S.meta.settings.name||"", stats:statsNow(), known:knownNow(), updated_at:new Date().toISOString()});
+  if(st.error) console.warn("Übersicht nicht gespeichert", st.error);
+}
+async function loadState(){
+  const l=lsGet(); S=normalize(l);
+  let r=null; try{ r=await readRemote(); }catch(e){ setSync("Online-Speicher gerade nicht erreichbar. Du lernst mit dem Stand dieses Geräts."); }
+  const pending=!!l && (l._u||0)>(l._s||0);
+  if(r){ if(!pending){ S=normalize(r); S._s=r._u||0; dirty=false; } else { mergeState(r); dirty=true; } }
+  else dirty=!!user && !!l && pending;
+  if(user && !r && !l) setSync("Neues Konto: Der Lernstand wird ab der ersten Karte online gespeichert.");
+  else if(user) setSync("Gespeichert · auf allen Geräten gleich");
+  else setSync("Ohne Konto: Der Lernstand liegt nur auf diesem Gerät.");
+  lsSet(); if(dirty) pushNow();
+}
+document.addEventListener("visibilitychange", async ()=>{
+  if(document.visibilityState==="hidden"){ lsSet(); pushNow(); return; }
+  if(dirty){ pushNow(); return; }
+  try{ const r=await readRemote(); if(r && (r._u||0)>(S._s||0)){ S=normalize(r); S._s=r._u||0; applyWordFilter(); lsSet(); render(); } }catch(e){}
+});
+window.addEventListener("pagehide", ()=>{ lsSet(); pushNow(); });
+window.addEventListener("online", ()=>{ if(dirty) pushNow(); });
+function statsNow(){ // Übersicht für Abendmeldung und Lesetext (Tabelle hsk_stats)
+  const t1=dayStart()+DAY, t2=t1+DAY; let dueTomorrow=0, dueNow=0;
+  for(const c of Object.values(S.cards)){ if(c.d<=Date.now()) dueNow++; if(c.d<t2) dueTomorrow++; }
+  const lg=S.meta.log[dayKey()]||{n:0,r:0}; const all=Object.values(S.cards);
+  const words=WORDS.length; const learned=all.length; const sure=all.filter(c=>status(c)==="sure").length;
+  const next=WORDS.find(w=>w.u&&!S.cards[w.id])||WORDS.find(w=>!S.cards[w.id]);
+  return {tag:dayKey(), neuHeute:lg.n, wiederholtHeute:lg.r, serie:streak(), faelligJetzt:dueNow, faelligBisMorgen:dueTomorrow,
+    neuProTag:S.meta.settings.newPerDay, gelernt:learned, sicher:sure, woerter:words,
+    naechsteGruppe: next ? (next.u ? "Unterricht" : "HSK "+next.l) : "alles gesehen", aktualisiert:new Date().toISOString()};
+}
+function knownNow(){ // Wortschatz für den abendlichen Lesetext
+  const bekannt=[], lernend=[];
+  for(const [id,c] of Object.entries(S.cards)){ const st=status(c); if(st==="rev"||st==="sure") bekannt.push(+id); else lernend.push(+id); }
+  bekannt.sort((a,b)=>a-b); lernend.sort((a,b)=>a-b);
+  const next=WORDS.filter(w=>!S.cards[w.id]).sort((a,b)=>(b.u?1:0)-(a.u?1:0)||a.id-b.id).slice(0,10).map(w=>w.id);
+  return {tag:dayKey(), bekannt, lernend, naechsteNeue:next, aktualisiert:new Date().toISOString()};
+}
+function trimLog(log){ const keys=Object.keys(log).sort().slice(-400); const o={}; keys.forEach(k=>o[k]=log[k]); return o; }
+function setSync(t){ const el=document.getElementById("syncNote"); if(el) el.textContent=t; }
+
+/* ---------- Wiederholung (vereinfachtes SM-2) ---------- */
+const STEPS=[1,10]; // Minuten für neue/vergessene Karten
+function fmt(min){ if(min<60) return Math.round(min)+" Min"; const d=min/1440; if(d<1) return Math.round(min/60)+" Std"; if(d<30) return Math.round(d)+(Math.round(d)===1?" Tag":" Tage"); if(d<365) return Math.round(d/30)+" Mon"; return (d/365).toFixed(1).replace(".",",")+" J"; }
+function schedule(c, a, now=Date.now()){ // a: 0 nochmal, 1 schwer, 2 gewusst, 3 sicher
+  c = c ? {...c} : {s:0, st:0, i:0, e:2.5, r:0, f:0};
+  const due=(days)=>dayStart(now)+Math.max(1,Math.round(days))*DAY;
+  if(c.s===0){
+    if(a===0){ c.st=0; c.d=now+STEPS[0]*6e4; }
+    else if(a===1){ c.d=now+(c.st===0?6:STEPS[1])*6e4; }
+    else if(a===2){ if(c.st+1<STEPS.length){ c.st++; c.d=now+STEPS[c.st]*6e4; } else { c.s=1; c.i=c.f?Math.max(1,c.i):1; c.d=due(c.i); } }
+    else { c.s=1; c.i= c.r===0 && !c.f ? 21 : Math.max(4, c.i*2); c.e=Math.min(3, c.e+0.15); c.d=due(c.i); }
+  } else {
+    if(a===0){ c.f++; c.e=Math.max(1.3,c.e-0.2); c.i=Math.max(1, Math.round(c.i*0.3)); c.s=0; c.st=1; c.d=now+STEPS[1]*6e4; }
+    else if(a===1){ c.e=Math.max(1.3,c.e-0.15); c.i=Math.max(c.i+1, c.i*1.2); c.d=due(c.i); }
+    else if(a===2){ c.i=Math.max(c.i+1, c.i*c.e); c.d=due(c.i); }
+    else { c.e=Math.min(3.2,c.e+0.15); c.i=Math.max(c.i+2, c.i*c.e*1.4); c.d=due(c.i); }
+  }
+  c.r++; c.u=now; c.i=Math.round(c.i*10)/10; return c;
+}
+function preview(c,a){ const now=Date.now(); const n=schedule(c,a,now); return fmt((n.d-now)/6e4); }
+function status(c){ if(!c) return "new"; if(c.s===0||c.i<3) return "learn"; if(c.i>=21) return "sure"; return "rev"; }
+
+/* ---------- Warteschlange ---------- */
+let sess={done:0, total:0, cur:null, revealed:false, sinceNew:0, extraNew:0};
+function counts(){
+  const now=Date.now(), end=dayStart()+DAY; let learnDue=0, revDue=0, learnLater=null;
+  for(const c of Object.values(S.cards)){
+    if(c.s===0){ if(c.d<=now) learnDue++; else if(c.d<end) learnLater=Math.min(learnLater??Infinity,c.d); }
+    else if(c.d<=now) revDue++;
+  }
+  const lim=S.meta.settings.newPerDay + sess.extraNew + (todayLog().x||0);
+  const newLeft=Math.max(0, lim - todayLog().n);
+  const unseen=WORDS.filter(w=>!S.cards[w.id]).length;
+  return {learnDue, revDue, newLeft:Math.min(newLeft,unseen), learnLater, unseen};
+}
+function nextCard(){
+  const now=Date.now(); const k=counts();
+  const learn=Object.entries(S.cards).filter(([,c])=>c.s===0&&c.d<=now).sort((a,b)=>a[1].d-b[1].d);
+  if(learn.length) return {id:+learn[0][0], kind:"learn"};
+  const rev=Object.entries(S.cards).filter(([,c])=>c.s===1&&c.d<=now).sort((a,b)=>a[1].d-b[1].d);
+  const wantNew = k.newLeft>0 && (rev.length===0 || sess.sinceNew>=3);
+  if(wantNew){ const w=WORDS.find(w=>w.u&&!S.cards[w.id])||WORDS.find(w=>!S.cards[w.id]); if(w) return {id:w.id, kind:"new"}; }
+  if(rev.length) return {id:+rev[0][0], kind:"rev"};
+  return null;
+}
+
+/* ---------- Ton und Pinyin ---------- */
+const T1="āēīōūǖĀĒĪŌŪǕ",T2="áéíóúǘÁÉÍÓÚǗ",T3="ǎěǐǒǔǚǍĚǏǑǓǙ",T4="àèìòùǜÀÈÌÒÙǛ";
+function tone(s){ for(const ch of s){ if(T1.includes(ch))return 1; if(T2.includes(ch))return 2; if(T3.includes(ch))return 3; if(T4.includes(ch))return 4; } return 5; }
+function esc(s){ return String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m])); }
+function pyHtml(w){ const syl=(w.ps||w.p).split(" "); return syl.map(s=>`<span class="tone${tone(s)}">${esc(s)}</span>`).join(""); }
+function hanHtml(w, colored){
+  if(!colored||!w.ps) return esc(w.w);
+  const syl=w.ps.split(" "), chars=[...w.w]; if(syl.length!==chars.length) return esc(w.w);
+  return chars.map((c,i)=>`<span class="tone${tone(syl[i])}">${esc(c)}</span>`).join("");
+}
+function bare(s){ return s.normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[\s'’\-]/g,"").toLowerCase(); }
+
+/* ---------- Aussprache ---------- */
+let zhVoice=null;
+function pickVoice(){ try{ const vs=speechSynthesis.getVoices(); zhVoice=vs.find(v=>/zh[-_]CN/i.test(v.lang))||vs.find(v=>/^zh/i.test(v.lang))||null; }catch(e){}
+  const n=document.getElementById("voiceNote"); if(n) n.textContent = !("speechSynthesis" in window) ? "Aussprache: Dieser Browser kann nicht vorlesen." : zhVoice ? "Aussprache: Stimme „"+zhVoice.name+"“." : "Aussprache: Keine chinesische Stimme gefunden. Auf iPad/Mac unter Einstellungen › Bedienungshilfen › Gesprochene Inhalte › Stimmen eine chinesische Stimme laden."; }
+function speak(text){ try{ if(!("speechSynthesis" in window)) return; speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text); u.lang="zh-CN"; if(zhVoice) u.voice=zhVoice; u.rate=+S.meta.settings.rate||0.8; speechSynthesis.speak(u); }catch(e){} }
+if("speechSynthesis" in window){ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; }
+
+/* ---------- Ansichten ---------- */
+let view="home";
+function show(v){ view=v; document.querySelectorAll(".view").forEach(el=>{ el.classList.toggle("hidden", el.id!==v); if(el.id===v) el.style.display="flex"; });
+  document.querySelectorAll("nav button").forEach(b=>b.setAttribute("aria-current", b.dataset.view===v?"true":"false"));
+  if(v==="learn") startSession(); render(); window.scrollTo(0,0); }
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>show(b.dataset.view));
+document.getElementById("startBtn").onclick=()=>show("learn");
+
+function render(){ if(view==="read") renderRead(); if(view==="home") renderHome(); if(view==="list") renderList(); if(view==="settings") renderSettings(); }
+
+function streak(){ let n=0, t=Date.now(); const has=k=>{const l=S.meta.log[k]; return l&&(l.n+l.r)>0;};
+  if(!has(dayKey(t))) t-=DAY; while(has(dayKey(t))){ n++; t-=DAY; } return n; }
+function renderHome(){
+  const k=counts();
+  document.getElementById("tDue").textContent=k.revDue+k.learnDue;
+  document.getElementById("tNew").textContent=k.newLeft;
+  document.getElementById("tStreak").textContent=streak();
+  const total=k.revDue+k.learnDue+k.newLeft;
+  const btn=document.getElementById("startBtn");
+  btn.disabled = total===0;
+  btn.textContent = total ? `Jetzt lernen · ${total} Karten` : "Für heute alles erledigt";
+  const mins=Math.max(1,Math.round((k.revDue*8 + k.newLeft*30 + k.learnDue*10)/60));
+  const next=WORDS.find(w=>w.u&&!S.cards[w.id])||WORDS.find(w=>!S.cards[w.id]);
+  document.getElementById("homeNote").textContent = total
+    ? `Etwa ${mins} Minuten. ${next?(next.u?`Zuerst kommen die Wörter aus dem Unterricht.`:`Nächstes neues Wort aus HSK ${next.l}.`):""}`
+    : (k.learnLater ? `Ein paar frisch gelernte Wörter kommen um ${new Date(k.learnLater).toLocaleTimeString("de-DE",{hour:"2-digit",minute:"2-digit"})} wieder.` : "Morgen geht es weiter.");
+  const box=document.getElementById("levels"); box.innerHTML="";
+  const groups=[...LEVELS.map(l=>({name:"HSK "+l, ws:WORDS.filter(w=>w.l===l)}))];
+  const uw=WORDS.filter(w=>w.u); if(uw.length) groups.unshift({name:"Unterricht", ws:uw});
+  for(const g of groups){ const l=g.name;
+    const ws=g.ws; const c={sure:0,rev:0,learn:0,new:0};
+    ws.forEach(w=>c[status(S.cards[w.id])]++);
+    const p=x=>(x/ws.length*100).toFixed(2)+"%";
+    const row=document.createElement("div"); row.className="lvl";
+    row.innerHTML=`<span class="name">${l}</span><div class="bar" role="img" aria-label="${l}: ${c.sure} sicher, ${c.rev} in Wiederholung, ${c.learn} gerade gelernt, ${c.new} neu"><i class="c-sure" style="width:${p(c.sure)}"></i><i class="c-rev" style="width:${p(c.rev)}"></i><i class="c-learn" style="width:${p(c.learn)}"></i></div><span class="num">${ws.length-c.new} / ${ws.length}</span>`;
+    box.appendChild(row);
+  }
+}
+
+/* ---------- Lernen ---------- */
+function startSession(){ const k=counts(); sess={done:0,total:k.revDue+k.learnDue+k.newLeft,cur:null,revealed:false,sinceNew:sess.sinceNew||0,extraNew:sess.extraNew||0}; nextStep(); }
+let waitTimer=null;
+function nextStep(){
+  clearTimeout(waitTimer);
+  sess.cur=nextCard(); sess.revealed=false;
+  const bar=document.getElementById("sessBar"); bar.style.width = sess.total? Math.min(100, sess.done/Math.max(sess.total,sess.done+1)*100)+"%" : "100%";
+  const cb=document.getElementById("cardBox"), ab=document.getElementById("answerBox");
+  if(!sess.cur){
+    const k=counts();
+    let html=`<div class="card" style="justify-content:center"><div class="han" style="font-size:72px" aria-hidden="true">好</div><h1 style="font-size:24px">Geschafft für jetzt</h1>`;
+    if(k.learnLater){ const m=Math.max(1,Math.ceil((k.learnLater-Date.now())/6e4));
+      html+=`<p class="note">Ein frisch gelerntes Wort kommt in ${m} Min wieder. Du kannst warten oder es gleich wiederholen.</p><div class="row"><button class="ghost" id="pullBtn">Jetzt wiederholen</button></div>`;
+      waitTimer=setTimeout(()=>{ if(view==="learn") nextStep(); }, Math.min(m*6e4, 6e5)); }
+    else html+=`<p class="note">${sess.done} Karten erledigt. Komm morgen wieder, dann sind die nächsten Wiederholungen fällig.</p>`;
+    if(k.unseen>0) html+=`<div class="row"><button class="ghost" id="moreBtn">5 weitere neue Wörter</button></div>`;
+    html+=`</div>`; cb.innerHTML=html; ab.innerHTML="";
+    const pb=document.getElementById("pullBtn"); if(pb) pb.onclick=()=>{ const e=Object.entries(S.cards).filter(([,c])=>c.s===0).sort((a,b)=>a[1].d-b[1].d)[0]; if(e){ S.cards[e[0]].d=Date.now(); } nextStep(); };
+    const mb=document.getElementById("moreBtn"); if(mb) mb.onclick=()=>{ todayLog().x=(todayLog().x||0)+5; markDirty(); sess.total+=5; sess.sinceNew=3; nextStep(); };
+    return;
+  }
+  drawCard();
+}
+function drawCard(){
+  const {id,kind}=sess.cur; const w=BYID.get(id), c=S.cards[id], st=S.meta.settings;
+  const cb=document.getElementById("cardBox"), ab=document.getElementById("answerBox");
+  const label = kind==="new" ? `<span class="chip new">NEU</span>` : kind==="learn" ? `<span class="chip">nochmal</span>` : `<span class="chip">Wiederholung</span>`;
+  let html=`<div class="card"><div class="meta"><span>${w.u?"Unterricht · ":""}${LNAME(w.l)}${w.id<20000?" · Nr. "+w.id:""}</span>${label}</div>`;
+  html+=`<div class="han" lang="zh-Hans">${hanHtml(w, sess.revealed && st.tone)}</div>`;
+  if(sess.revealed || st.pyFront) html+=`<div class="py">${pyHtml(w)}</div>`;
+  if(sess.revealed){
+    html+=`<div class="de">${esc(w.de)}</div>`;
+    html+=`<div class="row"><button class="say" id="sayW">▶ Wort anhören</button>${w.ex?'<button class="say" id="sayE">▶ Satz anhören</button>':''}</div>`;
+    if(w.ex) html+=`<div class="ex"><span class="zh" lang="zh-Hans">${esc(w.ex)}</span><span class="exp">${esc(w.exp)}</span><span class="exde">${esc(w.exde)}</span></div>`;
+  }
+  html+=`</div>`; cb.innerHTML=html;
+  if(!sess.revealed){
+    ab.innerHTML=`<button class="primary" id="revealBtn">Aufdecken</button><p class="kbd">Leertaste deckt auf · Tasten 1–4 bewerten</p>`;
+    document.getElementById("revealBtn").onclick=reveal;
+  } else {
+    const isNew=!c;
+    ab.innerHTML=`<div class="answers">
+      <button class="a-again" data-a="0">Wusste ich nicht<small>${preview(c,0)}</small></button>
+      <button class="a-hard" data-a="1">Schwer<small>${preview(c,1)}</small></button>
+      <button class="a-good" data-a="2">Gewusst<small>${preview(c,2)}</small></button>
+      <button class="a-easy" data-a="3">${isNew?"Kann ich sicher":"Leicht"}<small>${preview(c,3)}</small></button></div>
+      <p class="kbd">${isNew?"Neues Wort: Lies es dir durch, hör es an und bewerte, ob du es schon kanntest.":"Unter den Knöpfen steht, wann das Wort wiederkommt."}</p>`;
+    ab.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>answer(+b.dataset.a));
+    document.getElementById("sayW").onclick=()=>speak(w.w);
+    const se=document.getElementById("sayE"); if(se) se.onclick=()=>speak(w.ex);
+  }
+}
+function reveal(){ if(!sess.cur||sess.revealed) return; sess.revealed=true; drawCard(); if(S.meta.settings.auto) speak(BYID.get(sess.cur.id).w); }
+function answer(a){
+  if(!sess.cur||!sess.revealed) return;
+  const {id,kind}=sess.cur; const before=S.cards[id];
+  S.cards[id]=schedule(before,a);
+  const lg=todayLog(); if(kind==="new"){ lg.n++; sess.sinceNew=0; } else { lg.r++; sess.sinceNew++; }
+  if(S.cards[id].s===1 || kind!=="learn") sess.done++;
+  markDirty();
+  nextStep();
+}
+document.addEventListener("keydown",e=>{
+  if(view!=="learn"||!document.getElementById("dlg").classList.contains("hidden")) return;
+  if(e.target.matches("input,select,textarea")) return;
+  if(e.key===" "||e.key==="Enter"){ if(!sess.revealed){ e.preventDefault(); reveal(); } }
+  else if(sess.revealed && "1234".includes(e.key)) answer(+e.key-1);
+});
+
+/* ---------- Wortliste ---------- */
+let LF={l:WORDS_U_FIRST(), st:"all"};
+function WORDS_U_FIRST(){ return "u"; }
+const STNAME={all:"Alle",new:"Neu",learn:"Gerade gelernt",rev:"In Wiederholung",sure:"Sicher"};
+function renderList(){
+  const ls=document.getElementById("lvlSeg"); ls.innerHTML="";
+  ["u",...LEVELS,"all"].forEach(l=>{ const b=document.createElement("button"); b.textContent=l==="u"?"Unterricht":l==="all"?"Alle":"HSK "+l; b.setAttribute("aria-pressed",LF.l===l); b.onclick=()=>{LF.l=l;renderList();}; ls.appendChild(b); });
+  const ss=document.getElementById("stSeg"); ss.innerHTML="";
+  Object.keys(STNAME).forEach(k=>{ const b=document.createElement("button"); b.textContent=STNAME[k]; b.setAttribute("aria-pressed",LF.st===k); b.onclick=()=>{LF.st=k;renderList();}; ss.appendChild(b); });
+  const q=document.getElementById("q").value.trim(), qb=bare(q), ql=q.toLowerCase();
+  const res=WORDS.filter(w=>(LF.l==='all'||(LF.l==='u'?!!w.u:w.l===LF.l)) && (LF.st==="all"||status(S.cards[w.id])===LF.st) &&
+    (!q || w.w.includes(q) || bare(w.p).includes(qb) || w.de.toLowerCase().includes(ql)));
+  document.getElementById("listCount").textContent = res.length+" Wörter";
+  const box=document.getElementById("wordList"); box.innerHTML="";
+  const frag=document.createDocumentFragment();
+  res.slice(0,400).forEach(w=>{ const st=status(S.cards[w.id]); const b=document.createElement("button"); b.className="item";
+    b.innerHTML=`<span class="h" lang="zh-Hans">${esc(w.w)}</span><span class="t"><span>${pyHtml(w)}</span><span>${esc(w.de)}</span></span><span class="st st-${st}">${STNAME[st]}</span>`;
+    b.onclick=()=>openWord(w); frag.appendChild(b); });
+  box.appendChild(frag);
+  if(res.length>400){ const p=document.createElement("p"); p.className="note"; p.style.padding="10px 14px"; p.textContent="Die ersten 400 werden gezeigt. Suche oder filtere, um weitere zu finden."; box.appendChild(p); }
+  if(!res.length){ const p=document.createElement("p"); p.className="note"; p.style.padding="14px"; p.textContent="Keine Wörter passen zu dieser Suche."; box.appendChild(p); }
+}
+document.getElementById("q").addEventListener("input",()=>renderList());
+function openWord(w){
+  const c=S.cards[w.id]; const dc=document.getElementById("dlgCard");
+  const info = !c ? "Noch nicht gelernt." : c.s===0 ? "Gerade in der Lernphase." : `Kommt wieder am ${new Date(c.d).toLocaleDateString("de-DE")} · Abstand ${fmt(c.i*1440)} · ${c.r} Mal gesehen`;
+  dc.innerHTML=`<div class="meta"><span>${w.u?"Unterricht · ":""}${LNAME(w.l)}${w.id<20000?" · Nr. "+w.id:""}${w.pos?" · "+esc(w.pos):""}</span><span>${STNAME[status(c)]}</span></div>
+    <div class="han" lang="zh-Hans">${hanHtml(w,S.meta.settings.tone)}</div><div class="py">${pyHtml(w)}</div><div class="de">${esc(w.de)}</div>
+    <div class="row"><button class="say" id="dW">▶ Wort anhören</button><button class="say" id="dE">▶ Satz anhören</button></div>
+    <div class="ex"><span class="zh" lang="zh-Hans">${esc(w.ex)}</span><span class="exp">${esc(w.exp)}</span><span class="exde">${esc(w.exde)}</span></div>
+    <p class="note">${info}</p><div class="row"><button class="ghost" id="dClose">Schließen</button></div>`;
+  document.getElementById("dlg").classList.remove("hidden");
+  document.getElementById("dW").onclick=()=>speak(w.w); document.getElementById("dE").onclick=()=>speak(w.ex);
+  const close=()=>document.getElementById("dlg").classList.add("hidden");
+  document.getElementById("dClose").onclick=close; document.getElementById("dClose").focus();
+  document.getElementById("dlg").onclick=e=>{ if(e.target.id==="dlg") close(); };
+}
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") document.getElementById("dlg").classList.add("hidden"); });
+
+
+/* ---------- Lesen ---------- */
+let TEXTS=null, curText=0, textsLoading=false, rOpt={py:true}, selTok=null;
+try{ rOpt.py = localStorage.getItem("hsk-read-py")!=="0"; }catch(e){}
+async function loadTexts(){
+  if(TEXTS||textsLoading) return;
+  if(window.__TEXTS){ TEXTS=window.__TEXTS; if(view==="read") renderRead(); return; }
+  if(!user) return;
+  textsLoading=true;
+  try{
+    const r=await fetch(`lesetexte/${user.id}/index.json`,{cache:"no-cache"});
+    const list = r.ok ? await r.json() : [];
+    list.sort((a,b)=>a.datum<b.datum?1:-1);
+    TEXTS=list.slice(0,30);
+  }catch(e){ TEXTS=[]; }
+  textsLoading=false; if(view==="read") renderRead();
+}
+async function loadText(i){
+  const t=TEXTS[i]; if(!t||t.saetze) return;
+  try{ const r=await fetch(`lesetexte/${user.id}/${t.datum}.json`,{cache:"no-cache"}); if(r.ok) Object.assign(t, await r.json()); }catch(e){}
+}
+function renderRead(){
+  const box=document.getElementById("readBox");
+  if(!user && !window.__TEXTS){ box.innerHTML='<section class="panel"><h2>Lesetext am Abend</h2><p class="note" style="margin-top:8px">Lesetexte gibt es nur mit Konto: Sie werden jeden Abend aus deinem Wortschatz geschrieben. Tippe dafür unter „Einstellungen“ auf „Mit Konto anmelden“.</p></section>'; return; }
+  if(!TEXTS){ box.innerHTML='<p class="note">Texte werden geladen …</p>'; loadTexts(); return; }
+  const known=Object.values(S.cards).filter(c=>{const st=status(c); return st==="rev"||st==="sure";}).length;
+  if(!TEXTS.length){ box.innerHTML=`<section class="panel"><h2>Lesetext am Abend</h2><p class="note" style="margin-top:8px">Jeden Abend schreibt Claude dir einen kurzen Text, der fast nur Wörter benutzt, die du schon kannst, dazu höchstens drei neue. Der erste kommt am Abend, nachdem etwa 60 Wörter in der Wiederholung sind. Gerade sind es ${known}.</p></section>`; return; }
+  const t=TEXTS[curText];
+  if(!t.saetze){ box.innerHTML='<p class="note">Text wird geladen …</p>'; loadText(curText).then(()=>{ if(view==="read") renderRead(); }); return; }
+  const neu=new Set(t.neu||[]);
+  let h=`<section class="panel reader"><div class="meta" style="display:flex;justify-content:space-between;color:var(--muted);font-size:13px"><span>${esc(new Date(t.datum+"T12:00").toLocaleDateString("de-DE",{weekday:"long",day:"numeric",month:"long"}))}</span><span>${t.abdeckung?esc(t.abdeckung)+" bekannt":""}</span></div>
+    <div class="rhead"><span class="zh" lang="zh-Hans">${esc(t.titel||"")}</span><span class="note">${esc(t.titelDe||"")}</span></div>
+    <div class="rtools"><button class="ghost" id="rPy">${rOpt.py?"Pinyin ausblenden":"Pinyin einblenden"}</button><button class="ghost" id="rAll">▶ Ganzen Text vorlesen</button><button class="ghost" id="rDe">Alle Übersetzungen</button></div>`;
+  (t.saetze||[]).forEach((st,i)=>{
+    const toks=(st.w||[]).map((tk,j)=>{ const [zh,py,de]=tk; if(!py) return `<span class="punc">${esc(zh)}</span>`;
+      const inner = rOpt.py ? `<ruby>${esc(zh)}<rt>${esc(py)}</rt></ruby>` : esc(zh);
+      return `<button class="tok${neu.has(zh)?" neu":""}" data-s="${i}" data-t="${j}" lang="zh-Hans">${inner}</button>`; }).join("");
+    h+=`<div class="sent"><div class="sline${rOpt.py?"":" nopy"}">${toks}</div><div class="sbtn"><button class="say" data-say="${i}">▶ Satz</button><button class="say" data-de="${i}">Übersetzung</button></div><div class="sde hidden" id="sde${i}">${esc(st.de||"")}</div></div>`;
+  });
+  if(neu.size) h+=`<p class="note">Gepunktet unterstrichen: ${neu.size} neue${neu.size===1?"s Wort":" Wörter"}. Tippe auf ein Wort für Pinyin und Bedeutung.</p>`;
+  else h+=`<p class="note">Tippe auf ein Wort für Pinyin und Bedeutung.</p>`;
+  h+=`<div id="pop"></div></section>`;
+  if(TEXTS.length>1){ h+=`<section class="panel older"><h2>Frühere Texte</h2>`+TEXTS.map((x,k)=>k===curText?"":`<button class="ghost" data-tx="${k}"><span lang="zh-Hans" style="font-family:var(--han)">${esc(x.titel||"")}</span> · ${esc(new Date(x.datum+"T12:00").toLocaleDateString("de-DE"))}</button>`).join("")+`</section>`; }
+  box.innerHTML=h;
+  document.getElementById("rPy").onclick=()=>{ rOpt.py=!rOpt.py; try{localStorage.setItem("hsk-read-py",rOpt.py?"1":"0");}catch(e){} renderRead(); };
+  document.getElementById("rAll").onclick=()=>speak((t.saetze||[]).map(st=>(st.w||[]).map(x=>x[0]).join("")).join(""));
+  document.getElementById("rDe").onclick=()=>box.querySelectorAll(".sde").forEach(e=>e.classList.remove("hidden"));
+  box.querySelectorAll("[data-say]").forEach(b=>b.onclick=()=>speak((t.saetze[+b.dataset.say].w||[]).map(x=>x[0]).join("")));
+  box.querySelectorAll("[data-de]").forEach(b=>b.onclick=()=>document.getElementById("sde"+b.dataset.de).classList.toggle("hidden"));
+  box.querySelectorAll("[data-tx]").forEach(b=>b.onclick=()=>{ curText=+b.dataset.tx; renderRead(); window.scrollTo(0,0); });
+  box.querySelectorAll(".tok").forEach(b=>b.onclick=()=>{
+    box.querySelectorAll(".tok.sel").forEach(x=>x.classList.remove("sel")); b.classList.add("sel");
+    const [zh,py,de]=t.saetze[+b.dataset.s].w[+b.dataset.t]; const w=WORDS.find(x=>x.w===zh);
+    const st = w ? STNAME[status(S.cards[w.id])] + " · " + (w.l?LNAME(w.l):"Unterricht") : "";
+    const p=document.getElementById("pop");
+    p.className="pop"; p.innerHTML=`<span class="h" lang="zh-Hans">${esc(zh)}</span><span class="t"><b>${esc(py)}</b><span>${esc(de)}</span><span class="note" style="font-size:13px">${esc(st)}</span></span><button class="say" id="pSay">▶</button>${w?'<button class="say" id="pMore">Mehr</button>':''}`;
+    document.getElementById("pSay").onclick=()=>speak(zh); speak(zh);
+    const m=document.getElementById("pMore"); if(m) m.onclick=()=>openWord(w);
+  });
+}
+
+/* ---------- Einstellungen ---------- */
+function renderSettings(){ const s=S.meta.settings;
+  document.getElementById("acctInfo").textContent = user ? "Angemeldet als "+user.email : "Ohne Konto (nur dieses Gerät)";
+  document.getElementById("sOut").textContent = user ? "Abmelden" : "Mit Konto anmelden";
+  document.getElementById("sName").value=s.name||""; document.getElementById("sU").checked=s.unterricht!==false;
+  document.getElementById("sNew").value=String(s.newPerDay); document.getElementById("sAuto").checked=!!s.auto;
+  document.getElementById("sRate").value=String(s.rate); document.getElementById("sTone").checked=!!s.tone; document.getElementById("sPyFront").checked=!!s.pyFront; pickVoice(); }
+function bindSetting(id,key,conv){ document.getElementById(id).addEventListener("change",e=>{ S.meta.settings[key]=conv(e.target); S.meta.su=Date.now(); if(key==="unterricht") applyWordFilter(); markDirty(); }); }
+bindSetting("sName","name",t=>t.value.trim()); bindSetting("sU","unterricht",t=>t.checked);
+document.getElementById("sOut").onclick=async()=>{ await pushNow(); try{ localStorage.removeItem("hsk:gastmodus"); }catch(e){} if(sb) await sb.auth.signOut(); location.reload(); };
+document.getElementById("sImpBtn").onclick=()=>{ const m=document.getElementById("sImpMsg");
+  try{ const x=JSON.parse(document.getElementById("sImp").value); if(!x.cards) throw 0; const before=Object.keys(S.cards).length;
+    mergeCards(x.cards); for(const [dk,v] of Object.entries((x.meta||{}).log||{})){ const l=S.meta.log[dk]; S.meta.log[dk]= !l?v:{n:Math.max(l.n||0,v.n||0), r:Math.max(l.r||0,v.r||0), x:Math.max(l.x||0,v.x||0)}; }
+    markDirty(); m.textContent=`Übernommen: ${Object.keys(S.cards).length-before} neue Karten, ${Object.keys(S.cards).length} insgesamt.`; document.getElementById("sImp").value=""; }
+  catch(e){ m.textContent="Das sieht nicht nach einem kopierten Lernstand aus. Kopiere ihn im alten Trainer noch einmal."; } };
+bindSetting("sNew","newPerDay",t=>+t.value); bindSetting("sAuto","auto",t=>t.checked); bindSetting("sRate","rate",t=>+t.value);
+bindSetting("sTone","tone",t=>t.checked); bindSetting("sPyFront","pyFront",t=>t.checked);
+
+/* ---------- Start ---------- */
+function applyWordFilter(){
+  const on=S.meta.settings.unterricht!==false;
+  WORDS=ALLWORDS.filter(w=>on || w.l>0).map(w=>on||!w._u ? w : w).map(w=>{ w.u = on ? w._u : undefined; return w; });
+  WORDS.sort((a,b)=>a.id-b.id); BYID=new Map(WORDS.map(w=>[w.id,w]));
+}
+function showLogin(step){ document.getElementById("nav").classList.add("hidden");
+  document.getElementById("authBox").classList.toggle("hidden", step!=="auth"); document.getElementById("nameBox").classList.toggle("hidden", step!=="name");
+  view="login"; document.querySelectorAll(".view").forEach(el=>{ el.classList.toggle("hidden", el.id!=="login"); if(el.id==="login") el.style.display="flex"; }); }
+async function enter(){
+  await loadState(); applyWordFilter();
+  if(user && !S.meta.settings.name){ showLogin("name"); return; }
+  document.getElementById("nav").classList.remove("hidden"); show("home");
+}
+function authMsg(t){ document.getElementById("aMsg").textContent=t; }
+async function authRun(fn){ authMsg(""); try{ await fn(); await enter(); }catch(e){ authMsg(authText(e)); } }
+function authText(e){ const m=String(e&&e.message||e);
+  if(/Invalid login/i.test(m)) return "E-Mail oder Passwort stimmen nicht.";
+  if(/already registered/i.test(m)) return "Für diese E-Mail gibt es schon ein Konto. Tippe auf „Anmelden“.";
+  if(/at least 6/i.test(m)) return "Das Passwort braucht mindestens 6 Zeichen.";
+  if(/valid email|invalid.*email/i.test(m)) return "Die E-Mail-Adresse ist ungültig.";
+  if(/Failed to fetch|network/i.test(m)) return "Keine Verbindung. Prüfe das Internet oder lerne ohne Konto.";
+  return m; }
+document.getElementById("aIn").onclick=()=>authRun(async()=>{ const {data,error}=await sb.auth.signInWithPassword({email:document.getElementById("aMail").value.trim(), password:document.getElementById("aPw").value}); if(error) throw error; user=data.user; });
+document.getElementById("aUp").onclick=()=>authRun(async()=>{ const {data,error}=await sb.auth.signUp({email:document.getElementById("aMail").value.trim(), password:document.getElementById("aPw").value}); if(error) throw error; if(!data.session) throw new Error("Konto angelegt. Bestätige die E-Mail und melde dich dann an."); user=data.user; });
+document.getElementById("aPw").addEventListener("keydown",e=>{ if(e.key==="Enter") document.getElementById("aIn").click(); });
+document.getElementById("aGuest").onclick=async()=>{ try{ localStorage.setItem("hsk:gastmodus","1"); }catch(e){} user=null; await enter(); };
+document.getElementById("nOk").onclick=()=>{ const n=document.getElementById("nName").value.trim(); if(!n) return; S.meta.settings.name=n; S.meta.su=Date.now(); markDirty(); document.getElementById("nav").classList.remove("hidden"); show("home"); };
+document.getElementById("nName").addEventListener("keydown",e=>{ if(e.key==="Enter") document.getElementById("nOk").click(); });
+
+(async function init(){
+  try{ ALLWORDS=await fetch("words.json").then(r=>{ if(!r.ok) throw 0; return r.json(); }); }
+  catch(e){ document.body.insertAdjacentHTML("afterbegin",'<p class="note" style="padding:16px">Die Wortliste konnte nicht geladen werden. Lade die Seite neu.</p>'); return; }
+  ALLWORDS.forEach(w=>{ w._u=w.u; });
+  if(sb){ try{ const {data}=await sb.auth.getSession(); user=data.session?data.session.user:null; }catch(e){ user=null; } }
+  let guest=false; try{ guest=localStorage.getItem("hsk:gastmodus")==="1"; }catch(e){}
+  if(!user && !guest && sb && navigator.onLine){ showLogin("auth"); return; }
+  await enter();
+})();
+if("serviceWorker" in navigator && location.protocol==="https:") navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script>
+</body>
+</html>
